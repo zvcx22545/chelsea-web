@@ -1,73 +1,93 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<div class="navbar">
-  <img src="img/logo-CS.png" class="navbar-logo" alt="โลโก้">
-    <div class="menu">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="img/logo-CS.png" class="navbar-logo" alt="โลโก้" />
+      <div class="menu">
         <a href="#home">หน้าแรก</a>
         <a href="#news">ตารางการแข่งขัน</a>
         <a href="#contact">ผลการแข่งขัน</a>
         <button class="navbar-button">ลงทะเบียน</button>
+      </div>
     </div>
-</div>
-<img src="img/top-bg.png" class="bg-top" alt="">
-<div class="content">
-    <div class="innerContents">
+    <img src="img/top-bg.png" class="bg-top" alt="" />
+    <div class="content">
+      <div class="innerContents">
         <h2>ลงทะเบียนเพื่อเข้าร่วมโครงการ “ชื่อโครงการ”</h2>
-        <p style="padding: 2rem 2rem;">Lorem ipsum dolor sit amet consectetur. At turpis feugiat enim volutpat aliquam tincidunt. Sit commodo pellentesque dui iaculis et tempor pretium. Tincidunt risus rhoncus sagittis ornare ipsum. Vulputate eget id odio cras ac volutpat. Id sociis tellus a turpis scelerisque eu venenatis.</p>
-    <hr>
-    </div>
+        <p style="padding: 2rem 2rem">
+          Lorem ipsum dolor sit amet consectetur. At turpis feugiat enim
+          volutpat aliquam tincidunt. Sit commodo pellentesque dui iaculis et
+          tempor pretium. Tincidunt risus rhoncus sagittis ornare ipsum.
+          Vulputate eget id odio cras ac volutpat. Id sociis tellus a turpis
+          scelerisque eu venenatis.
+        </p>
+        <hr />
+      </div>
     </div>
     <div id="form-steps">
-        <div class="step active" data-step="1">
-          Step 1: ข้อมูลเบื้องต้น
+      <div class="step active" data-step="1">1</div>
+      <div class="step" data-step="2">2</div>
+      <div class="step" data-step="3">3</div>
+    </div>
+
+    <form id="conditional-form">
+      <div class="form-section" data-step="1">
+        <!-- Form fields for step 1 -->
+        <div class="sport-title">
+          <label for="name">กรุณาเลือกสนามแข่งขั้น</label>
+          <p style="color: #eb0000; font-size: 1.5rem">*</p>
         </div>
-        <div class="step" data-step="2">
-          Step 2: ข้อมูลเพิ่มเติม
+        <input type="text" id="name" name="name" required />
+
+        <div class="sport-title">
+          <label for="name">กรุณากรอกชื่อทีม</label>
+          <p style="color: #eb0000; font-size: 1.5rem">*</p>
         </div>
-        <div class="step" data-step="3">
-          Step 3: สรุป-คำนวณ
+        <input type="text" id="name" name="name" required />
+        <div class="sport-title">
+          <label for="name">กรอกชื่อ - นามสกุล ผู้สมัคร</label>
+          <p style="color: #eb0000; font-size: 1.5rem">*</p>
+        </div>
+        <input type="text" id="name" name="name" required />
+        <div class="sport-title">
+          <label for="name">เบอร์โทร</label>
+          <p style="color: #eb0000; font-size: 1.5rem">*</p>
+        </div>
+        <input type="text" id="name" name="name" required />
+        <div class="sport-title">
+          <label for="name">อีเมล</label>
+          <p style="color: #eb0000; font-size: 1.5rem">*</p>
+        </div>
+        <input type="text" id="name" name="name" required />
+        <div class="btn-next">
+          <button class="next" type="button" onclick="nextStep(2)">
+            ถัดไป
+          </button>
         </div>
       </div>
-      
-      <form id="conditional-form">
-        <div class="form-section" data-step="1">
-          <!-- Form fields for step 1 -->
-          <label for="name">กรุณาเลือกสนามแข่งขั้น :</label>
-          <input type="text" id="name" name="name" required>
-          <label for="name">กรุณากรอกชื่อทีม :</label>
-          <input type="text" id="name" name="name" required>
-          <label for="name">กรอกชื่อ - นามสกุล ผู้สมัคร :</label>
-          <input type="text" id="name" name="name" required>
-          <label for="name">เบอร์โทร :</label>
-          <input type="text" id="name" name="name" required>
-          <label for="name">อีเมล :</label>
-          <input type="text" id="name" name="name" required>
-          <button type="button" onclick="nextStep(2)">ถัดไป</button>
-        </div>
-      
-        <div class="form-section" data-step="2" style="display: none;">
-          <!-- Form fields for step 2 -->
-          <label for="more-info">ข้อมูลเพิ่มเติม:</label>
-          <input type="text" id="more-info" name="more-info" required>
-          <button type="button" onclick="prevStep(1)">Previous</button>
-          <button type="button" onclick="nextStep(3)">Next</button>
-        </div>
-      
-        <div class="form-section" data-step="3" style="display: none;">
-          <!-- Form fields for step 3 -->
-          <label for="summary">สรุปข้อมูล:</label>
-          <input type="text" id="summary" name="summary" required>
-          <button type="button" onclick="prevStep(2)">Previous</button>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
 
-<script src="js/script.js"></script>
-</body>
+      <div class="form-section" data-step="2" style="display: none">
+        <!-- Form fields for step 2 -->
+        <label for="more-info">ข้อมูลเพิ่มเติม:</label>
+        <input type="text" id="more-info" name="more-info" required />
+        <button type="button" onclick="prevStep(1)">Previous</button>
+        <button type="button" onclick="nextStep(3)">Next</button>
+      </div>
+
+      <div class="form-section" data-step="3" style="display: none">
+        <!-- Form fields for step 3 -->
+        <label for="summary">สรุปข้อมูล:</label>
+        <input type="text" id="summary" name="summary" required />
+        <button type="button" onclick="prevStep(2)">Previous</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
