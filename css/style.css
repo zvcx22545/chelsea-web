@@ -179,41 +179,47 @@ th, td {
 
 .Hreward{
   display: flex;
-  background-color: #007bff;
+  color: white;
+  background-color: #050E4F;
   height: auto;
   width: 100%;
   justify-content: space-between;
   padding: 2rem;
 }
 .rewardData{
-  background-color: #00ea37;
   height: auto;
-  width: 60%;
+  width: 80%;
 }
 .topic{
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: left;
 }
+.linef{
+  height: auto;
+  width: 1rem;
+  background-color: white;
+  margin-right: 1rem;
+}
 .data1{
-  background-color: #ea0008;
-  height: 100px;
-  width: 70%;
-  margin-top: 20px;
+  display: flex;
+  margin-top: 60px;
   margin-bottom: 20px;
+  padding-right: 20px;
+  text-align: left;
 }
 .data2{
-  background-color: #ea0000;
-  height: 100px;
-  width: 70%;
+  display: flex;
   margin-bottom: 20px;
-  margin-left: 50px;
+  padding-right: 20px;
+  margin-left: 10px;
+  text-align: left;
 }
 .data3{
-  background-color: #ea0000;
-  height: 100px;
-  width: 70%;
+  display: flex;
   margin-bottom: 20px;
-  margin-left: 100px;
+  padding-right: 20px;
+  margin-left: 20px;
+  text-align: left;
 }
 .imagRigt{
   background-image: url("/img/rightimageData.png"); 
@@ -224,13 +230,60 @@ th, td {
   width: calc(100% - 60%);
   vertical-align: bottom;
 }
+
+.dataRegis{
+  display: flex;
+  justify-content: space-between;
+  background-image: url('/img/bg.bottom.png');
+  background-color: #033061f3;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.imagLeft{
+  background-image: url('/img/imageLeft.png');
+  /* background-color: #033061f3; */
+  background-size: 75%;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.Dataright{
+  width: calc(100% - 50%);
+}
+
+/* Style the dropdown */
+#dropdown {
+  width: 200px; /* Set the width of the dropdown */
+  padding: 10px; /* Add some padding for spacing */
+  font-size: 16px; /* Set the font size */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Round the corners */
+  background-color: #fff; /* Background color */
+}
+
+/* Style the dropdown when it's focused */
+#dropdown:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #007bff; /* Change the border color when focused */
+}
+
+/* Style the dropdown options */
+#dropdown option {
+  font-size: 14px; /* Set the font size for options */
+}
+
+/* Style the label */
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
 /* เคล็ดลับการปรับแต่งเมื่อหน้าจอเล็กลง */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .navbar a,
   .navbar-button {
     margin: 5px 0;
