@@ -1,8 +1,5 @@
 /* Reset margin and padding for all elements */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 * {
   margin: 0;
   padding: 0;
@@ -191,39 +188,41 @@ th, td {
 .rewardData{
   background-color: #00ea37;
   height: auto;
-  width: 70%;
-  padding: 30px;
+  width: 60%;
 }
 .topic{
+  margin-top: 50px;
   text-align: left;
 }
 .data1{
   background-color: #ea0008;
   height: 100px;
-  width: 65%;
+  width: 70%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .data2{
   background-color: #ea0000;
   height: 100px;
-  width: 65%;
+  width: 70%;
   margin-bottom: 20px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 .data3{
   background-color: #ea0000;
   height: 100px;
-  width: 65%;
+  width: 70%;
   margin-bottom: 20px;
-  margin-left: 200px;
+  margin-left: 100px;
 }
 .imagRigt{
   background-image: url("/img/rightimageData.png"); 
   background-repeat: no-repeat;
+  background-size: 100%;
   position: center;
-  height: auto;
-  width: calc(100% - 70%);
+  height: 676px;
+  width: calc(100% - 60%);
+  vertical-align: bottom;
 }
 /* เคล็ดลับการปรับแต่งเมื่อหน้าจอเล็กลง */
 @media (max-width: 768px) {
