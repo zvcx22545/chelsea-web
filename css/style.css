@@ -132,6 +132,7 @@
   margin-left: 5rem;
   /* 621746860103 */
 }
+
 btn >a{
   color: white;
   text-decoration: none;
@@ -277,7 +278,57 @@ label {
   font-weight: bold;
   margin-right: 10px;
 }
+.rewardCom{
+  display: flex;
+  justify-content: center;
+}
+.dataReward{
+  text-align: left;
+}
 
+li{
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+footer{
+  margin-top: 50px;
+  background-image: url('/img/homeTop-bg.png');
+  background-color: #05256F;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.topFooter{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.footleft{
+  display: flex;
+  width: 50%;
+  text-align: left;
+}
+.footright{
+  vertical-align: middle;
+  display: flex;
+  justify-content: right;
+  width: 50%;
+}
+i{
+  height: 2rem;
+  width: 2rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+.footBottom{
+  margin-top: 2rem;
+  text-align: center;
+}
 /* เคล็ดลับการปรับแต่งเมื่อหน้าจอเล็กลง */
 @media (max-width: 768px) {
   .navbar {
