@@ -312,14 +312,14 @@ li{
   background-color: white; /* Background is white by default */
   color: #05256F; /* Text is black by default */
   border-radius: 20px;
-  padding: 10px;
+  padding: 15px;
   transition: all 0.3s ease-in-out;
 }
 
 .toggle-handle {
   position: absolute;
-  top: 10px;
-  right: 2px;
+  top: 20px;
+  right: 35px;
   width: 20px;
   height: 20px;
   background-image: url('/img/caret-down-fill.svg');
