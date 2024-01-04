@@ -31,6 +31,7 @@ input[type="password"] {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  height: 5%;
 }
 
 button {
@@ -71,25 +72,66 @@ button:hover {
 
 /* เริ่มต้นด้วยการซ่อนทุกส่วนของฟอร์มยกเว้นส่วนแรก */
 
-  /* สไตล์ของขั้นตอนในการกรอกฟอร์ม */
+/* สไตล์ของขั้นตอนในการกรอกฟอร์ม */
 
-  .step.active {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .sport-title
-  {
-    display: flex;
-    gap: 0.3rem;
-    font-weight: 600;
-    font-size: clamp(16px, 1.953vw, 24px);
-  }
-  
-.btn-next
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
+.step.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.sport-title {
+  display: flex;
+  gap: 0.3rem;
+  font-weight: 600;
+  font-size: clamp(16px, 1.953vw, 24px);
+}
+
+.btn-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.sport-title label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#stadium-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 5%;
+  color: #979797;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+/* Style the dropdown arrow - this is optional and browser-specific */
+#stadium-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%;
+  background-size: 1.5em 1.5em;
+}
+
+.select-stadium {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.fa-angle-down {
+  position: absolute;
+  right: 0;
+  margin-right: 2rem;
+  font-size: 2rem;
 }

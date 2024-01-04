@@ -39,11 +39,20 @@
       <div class="form-section" data-step="1">
         <!-- Form fields for step 1 -->
         <div class="sport-title">
-          <label for="name">กรุณาเลือกสนามแข่งขั้น</label>
+          <label for="stadium-select">กรุณาเลือกสนามแข่งขั้น</label>
           <p style="color: #eb0000; font-size: 1.5rem">*</p>
+          
         </div>
-        <input type="text" id="name" name="name" required />
-
+        <div class="select-stadium">
+        <select id="stadium-select" name="stadium-select" required>
+          <option value="">กรุณาเลือกสนามแข่งขัน</option>
+          <!-- Add more options here -->
+          <option value="stadium1">สนามแข่งขัน 1</option>
+          <option value="stadium2">สนามแข่งขัน 2</option>
+          <!-- ... -->
+        </select>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
         <div class="sport-title">
           <label for="name">กรุณากรอกชื่อทีม</label>
           <p style="color: #eb0000; font-size: 1.5rem">*</p>
@@ -87,7 +96,7 @@
         <button type="submit">Submit</button>
       </div>
     </form>
-
+    <script src="https://kit.fontawesome.com/32a2f35189.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
