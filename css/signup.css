@@ -25,13 +25,16 @@ label {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="file"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  height: 5%;
+  height: 3rem;
   color: #2147a8;
   font-family: Inter;
   font-size: 18px;
@@ -109,7 +112,7 @@ button:hover {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  height: 5%;
+  height: 3rem;
   color: #979797;
   font-family: Inter;
   font-size: 18px;
@@ -120,22 +123,50 @@ button:hover {
 }
 
 /* Style the dropdown arrow - this is optional and browser-specific */
-#stadium-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-position: right 0.7em top 50%;
-  background-size: 1.5em 1.5em;
-}
+/* ใช้คลาส "angle-down" เพื่อเลือกเฉพาะ Select */
+
 
 .select-stadium {
   display: flex;
   align-items: center;
-  position: relative;
 }
-.fa-angle-down {
-  position: absolute;
-  right: 0;
-  margin-right: 2rem;
-  font-size: 2rem;
+.select-stadium {
+  overflow: hidden; /* To hide the default arrow */
+}
+
+.select-stadium select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-appearance: none; /* Removes default arrow for WebKit browsers */
+  -moz-appearance: none;   /* Removes default arrow for Mozilla browsers */
+  appearance: none;
+  background: url('https://cdn-icons-png.flaticon.com/512/25/25623.png') no-repeat right 2rem center; /* Custom arrow positioned slightly to the left */
+  background-size: 32px 32px; /* Set the size of the arrow */
+  cursor: pointer; /* Changes the cursor to signify this is a dropdown */
+}
+
+
+/* Style to apply when the select box is focused */
+.select-stadium select:focus {
+  outline: none;
+  border-color: #007bff; /* Example focus color */
+}
+
+.add-player
+{
+  color: #000;
+  font-family: Inter;
+  font-size: 2rem !important ;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Player-title
+{
+  display: flex;
+}
+input[type="file"]
+{
+  display: none;
+
 }

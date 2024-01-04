@@ -22,3 +22,9 @@ document.getElementById('conditional-form').addEventListener('submit', function(
   event.preventDefault();
   alert('Form submitted!');
 });
+function triggerFileInput() {
+  document.getElementById('file-upload').click();
+}
+
+
+
