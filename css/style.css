@@ -52,7 +52,7 @@
 /* รูปโลโก้ */
 .navbar-logo {
   height: 50px; /* คุณสามารถปรับขนาดตามโลโก้จริงได้ */
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 /* ลิงก์นำทาง */
@@ -81,7 +81,7 @@
 
 .bg-top {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 7.5rem;
 }
 /* .homeTop-bg{
   display: ;
@@ -102,13 +102,13 @@
 #form-steps {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .step {
-  padding: 10px;
+  padding: 0.625rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 0.313rem;
   cursor: pointer;
 }
 
@@ -120,15 +120,15 @@
 .form-section {
   /* margin-bottom: 20px; */
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 80%;
   height: 100vh;
   margin: auto;
 }
 .main-contents{
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   margin-left: 5rem;
   /* 621746860103 */
 }
@@ -136,27 +136,27 @@
 btn >a{
   color: white;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 1.25rem;
   font-size: 1rem; /* ปรับขนาดตามต้องการ */
-  border-radius: 5px;
-  padding: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  border-radius: 0.313rem;
+  padding: 0.625rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   background-color: #033161;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   margin-left: 5rem;
 }
 .main{
   align-items: center;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 0.938rem;
 }
 .main input{
-  margin-top: 15px;
+  margin-top: 0.938rem;
   width: 30rem;
   height: 2rem;
-  border-radius: 5px;
-  padding: 5px;
+  border-radius: 0.313rem;
+  padding: 0.313rem;
 }
 table, td, th{  
   border: 2px solid #ddd;
@@ -165,16 +165,16 @@ table, td, th{
 .taberdata{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 table {
   border-collapse: collapse;
   width: 50%;
  }
 th, td {
-  padding: 15px;
-  width: 250px;
+  padding: 0.938rem;
+  width: 15.625rem;
   right: 0;
 }
 
@@ -192,7 +192,7 @@ th, td {
   width: 80%;
 }
 .topic{
-  margin-top: 100px;
+  margin-top: 6.25rem;
   text-align: left;
 }
 .linef{
@@ -203,16 +203,16 @@ th, td {
 }
 .data1{
   display: flex;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  padding-right: 20px;
+  margin-top: 3.75rem;
+  margin-bottom: 1.25rem;
+  padding-right: 1.25rem;
   text-align: left;
 }
 .data2{
   display: flex;
-  margin-bottom: 20px;
-  padding-right: 20px;
-  margin-left: 10px;
+  margin-bottom: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: 1.25rem;
   text-align: left;
 }
 .data3{
@@ -227,7 +227,7 @@ th, td {
   background-repeat: no-repeat;
   background-size: 100%;
   position: center;
-  height: 676px;
+  height: 42.25rem;
   width: calc(100% - 60%);
   vertical-align: bottom;
 }
@@ -254,11 +254,11 @@ th, td {
 
 /* Style the dropdown */
 #dropdown {
-  width: 200px; /* Set the width of the dropdown */
-  padding: 10px; /* Add some padding for spacing */
-  font-size: 16px; /* Set the font size */
+  width: 12.5rem; /* Set the width of the dropdown */
+  padding: 0.625rem; /* Add some padding for spacing */
+  font-size: 1rem; /* Set the font size */
   border: 1px solid #ccc; /* Add a border */
-  border-radius: 4px; /* Round the corners */
+  border-radius: 0.25rem; /* Round the corners */
   background-color: #fff; /* Background color */
 }
 
@@ -270,13 +270,13 @@ th, td {
 
 /* Style the dropdown options */
 #dropdown option {
-  font-size: 14px; /* Set the font size for options */
+  font-size: 0.875rem; /* Set the font size for options */
 }
 
 /* Style the label */
 label {
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .rewardCom{
   display: flex;
@@ -291,13 +291,13 @@ li{
   margin-bottom: 0.875rem;
 }
 footer{
-  margin-top: 50px;
+  margin-top: 3.125rem;
   background-image: url('/img/homeTop-bg.png');
   background-color: #05256F;
   background-repeat: no-repeat;
   vertical-align: middle;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   color: white;
   padding-top: 5rem;
   padding-left: 5rem;
