@@ -18,7 +18,7 @@
   padding: 10px 20px;
   padding-left: 10rem;
   padding-right: 10rem;
-  height: 120px;
+  height: 7.5rem;
   width: 100%;
 }
 .content-homepage{
@@ -244,11 +244,12 @@ th, td {
 .imagLeft{
   background-image: url('/img/imageLeft.png');
   /* background-color: #033061f3; */
-  background-size: 75%;
+  background-size: 100%;
   background-repeat: no-repeat;
-  width: 50%;
+  width: 45%;
 }
 .Dataright{
+  margin-top: 10rem;
   width: calc(100% - 50%);
 }
 
@@ -290,6 +291,66 @@ li{
   margin-top: 0.875rem;
   margin-bottom: 0.875rem;
 }
+
+
+/* Base styles for the layout */
+.toggle-container {
+  margin: 10px;
+  text-align: left;
+}
+
+/* Styles for the toggle switch */
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  /* position: relative; */
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  background-color: #05256F;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* .toggle-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 15px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+} */
+
+.toggle-text {
+  margin-left: 30px;
+}
+
+/* .toggle-input:checked + .toggle-label .toggle-handle {
+  transform: translateX(40px);
+  background-color: #4CAF50;
+} */
+
+/* Content that shows/hides on toggle */
+.toggle-content {
+  display: none;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.toggle-input:checked ~ .toggle-content {
+  display: block;
+}
+
+
+
+/* footer */
 footer{
   margin-top: 3.125rem;
   background-image: url('/img/homeTop-bg.png');
