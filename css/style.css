@@ -10,7 +10,7 @@
 /* สไตล์แถบนำทาง */
 .navbar {
   position: fixed;
-  background-color: #034694; /* สีน้ำเงินของ Chelsea */
+  background-color: #034694;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,9 @@
   padding-right: 10rem;
   height: 7.5rem;
   width: 100%;
+  z-index: 10; /* ค่า z-index สูงสุดเพื่อให้ Navbar อยู่ด้านบนสุด */
 }
+
 .content-homepage{
   background-image: url('/img/homeTop-bg.png');
   background-repeat: no-repeat;
