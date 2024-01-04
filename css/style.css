@@ -306,34 +306,42 @@ li{
 
 .toggle-label {
   display: block;
-  /* position: relative; */
+  position: relative;
   cursor: pointer;
   user-select: none;
-  color: white;
-  background-color: #05256F;
+  background-color: white; /* Background is white by default */
+  color: #05256F; /* Text is black by default */
   border-radius: 20px;
   padding: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
-/* .toggle-handle {
+.toggle-handle {
   position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 15px;
+  top: 10px;
+  right: 2px;
+  width: 20px;
   height: 20px;
-  background: white;
-  border-radius: 50%;
+  background-image: url('/img/caret-down-fill.svg');
+  color: white;
+  background-repeat: no-repeat;
   transition: all 0.3s ease-in-out;
-} */
+}
 
 .toggle-text {
-  margin-left: 30px;
+  margin-left: 35px;
 }
 
-/* .toggle-input:checked + .toggle-label .toggle-handle {
-  transform: translateX(40px);
-  background-color: #4CAF50;
-} */
+.toggle-input:checked + .toggle-label {
+  background-color: #05256F; /* Background turns black when activated */
+  color: white; /* Text turns white when activated */
+}
+
+.toggle-input:checked + .toggle-label .toggle-handle {
+  transform: translateX(0);
+  background-image: url('/img/caret-up-fill.svg');
+  background-repeat: no-repeat;
+}
 
 /* Content that shows/hides on toggle */
 .toggle-content {
