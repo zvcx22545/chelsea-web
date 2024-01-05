@@ -170,3 +170,13 @@ input[type="file"]
   display: none;
 
 }
+
+.cardnumber{
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+/* CSS เพื่อซ่อนฟอร์มเริ่มต้นในขั้นตอนที่ 2 */
+.form-section[data-step="2"] {
+  display: none;
+}
