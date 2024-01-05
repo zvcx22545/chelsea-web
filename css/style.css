@@ -219,9 +219,9 @@ th, td {
 }
 .data3{
   display: flex;
-  margin-bottom: 20px;
-  padding-right: 20px;
-  margin-left: 20px;
+  margin-bottom: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: 2.5rem;
   text-align: left;
 }
 .imagRigt{
@@ -369,11 +369,14 @@ li{
   padding-right: 15rem;
   color: white;
 }
+button >a{
+  text-decoration: none;
+}
 .top-main h1{
   margin-bottom: 1rem;
 }
 .top-main .topbtn{
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 /* footer */
