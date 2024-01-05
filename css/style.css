@@ -357,8 +357,24 @@ li{
 .toggle-input:checked ~ .toggle-content {
   display: block;
 }
-
-
+/* top main */
+.top-main{
+  background-image: url('/img/bg.bottom.png');
+  background-repeat: no-repeat;
+  background-color: #050E4F;
+  height: 656px;
+  text-align: center;
+  padding: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  color: white;
+}
+.top-main h1{
+  margin-bottom: 1rem;
+}
+.top-main .topbtn{
+  margin-top: 2rem;
+}
 
 /* footer */
 footer{
