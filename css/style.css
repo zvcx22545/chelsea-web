@@ -219,9 +219,9 @@ th, td {
 }
 .data3{
   display: flex;
-  margin-bottom: 20px;
-  padding-right: 20px;
-  margin-left: 20px;
+  margin-bottom: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: 2.5rem;
   text-align: left;
 }
 .imagRigt{
@@ -357,8 +357,27 @@ li{
 .toggle-input:checked ~ .toggle-content {
   display: block;
 }
-
-
+/* top main */
+.top-main{
+  background-image: url('/img/bg.bottom.png');
+  background-repeat: no-repeat;
+  background-color: #050E4F;
+  height: 656px;
+  text-align: center;
+  padding: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  color: white;
+}
+button >a{
+  text-decoration: none;
+}
+.top-main h1{
+  margin-bottom: 1rem;
+}
+.top-main .topbtn{
+  margin-top: 5rem;
+}
 
 /* footer */
 footer{
