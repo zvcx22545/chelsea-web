@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       
       // This is the username and password you want to check against
       const correctUsername = 'admin'; // Set the correct username here
-      const correctPassword = '1234'; // hash 1234
+      const correctPassword = '1234'; //
       
       if (username === correctUsername && password === correctPassword) {
         // If credentials are correct, set the session and redirect
