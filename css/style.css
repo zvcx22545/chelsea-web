@@ -180,6 +180,21 @@ th, td {
   right: 0;
 }
 
+.Title
+{
+  color: #000;
+font-family: Inter;
+font-size: 32px;
+font-weight: 600;
+line-height: normal;
+margin-top: 8rem;
+}
+
+.linetitle
+{
+  border-top: 1px solid #C4C4C4;
+}
+
 .Hreward{
   display: flex;
   color: white;

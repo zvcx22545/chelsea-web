@@ -1,0 +1,91 @@
+.upload-doc-button {
+  width: 100%;
+  background: none;
+  color: #eb0000;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  height: 3rem;
+  border-radius: 8px;
+  border: 1px solid #979797;
+  background: #fff;
+}
+
+.upload-doc-button:hover {
+  width: 100%;
+  background: none;
+  color: #eb0000;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  height: 3rem;
+}
+.file-label {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.add-player-btn {
+  margin-top: 1.5rem;
+}
+.quanlity-player {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-player-btn {
+  background: none;
+  display: inline-flex;
+  padding: 15px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #0b266b;
+  background: #fff;
+  color: #0b266b;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.add-player-btn:hover {
+  color: white;
+}
+.add-player-info {
+  color: #4f4f4f;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 1.5rem;
+}
+
+.btn-control {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.file-upload-info {
+  margin-bottom: 1rem;
+}
+.btn-control>button
+{
+    width: 196px;
+}
+
+#image-preview-container-0
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

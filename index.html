@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/signup.css" />
+  <link rel="stylesheet" href="css/form.css" />
 </head>
 
 <body>
@@ -20,7 +21,7 @@
   <img src="img/top-bg.png" class="bg-top" alt="" />
   <div class="content">
     <div class="innerContents">
-      <h2>ลงทะเบียนเพื่อเข้าร่วมโครงการ “ชื่อโครงการ”</h2>
+      <h2 class="Title">ลงทะเบียนเพื่อเข้าร่วมโครงการ “ชื่อโครงการ”</h2>
       <p style="padding: 2rem 2rem">
         Lorem ipsum dolor sit amet consectetur. At turpis feugiat enim
         volutpat aliquam tincidunt. Sit commodo pellentesque dui iaculis et
@@ -28,7 +29,8 @@
         Vulputate eget id odio cras ac volutpat. Id sociis tellus a turpis
         scelerisque eu venenatis.
       </p>
-      <hr />
+      <!-- เส้นขั้นหน้าระหว่างตรงหัวข้อกับลงทะเบียน -->
+      <hr class="linetitle"/>
     </div>
   </div>
   <div id="form-steps">
@@ -74,13 +76,12 @@
       </div>
       <input type="email" id="emailCaptian" name="emailCaptian" placeholder="กรุณากรอกอีเมล" required />
       <div class="btn-next">
-        <button class="next" type="button" onclick="nextStep(2)">
+        <button class="next" type="button" style="width: 196px;" onclick="nextStep(2)">
           ถัดไป
         </button>
       </div>
     </div>
     <div id="initialForm">
-
       <div class="form-section" data-step="2">
         <!-- Form fields for step 2 -->
         <form action="" enctype="multipart/form-data">
@@ -97,35 +98,41 @@
             <label for="phoneplayer">เบอร์โทร</label>
             <p style="color: #eb0000; font-size: 1.5rem">*</p>
           </div>
-          <input type="tel" id="phoneplayer" name="phoneplayer" placeholder="กรุณาเบอร์โทร 10 หลัก" required />
+          <input type="tel" id="phoneplayer" name="phoneplayer" placeholder="กรุณาเบอร์โทร 10 หลัก" pattern="[0-9]{10}" required />
           <div class="sport-title">
             <label for="emailplayer">อีเมล</label>
             <p style="color: #eb0000; font-size: 1.5rem">*</p>
           </div>
           <input type="email" id="emailplayer" name="emailplayer" placeholder="กรุณากรอกอีเมล" required />
-          <div class="form-group">
-            <div class="sport-title">
+
+          <div class="sport-title">
             <div class="cardnumber">บัตรประชาชน/หนังสือเดินทาง</div>
             <p style="color: #eb0000; font-size: 1.5rem">*</p>
-            </div>
-            <label for="file-upload" class="file-label">
-              <button type="button" class="upload-doc" onclick="document.getElementById('file-upload').click()">
-                + แนบไฟล์เอกสาร
-              </button>
-            </label>
-            <input type="file" id="file-upload" name="file-upload" required />
-            <p class="file-upload-info">
-              *Lorem ipsum dolor sit amet consectetur. Nunc sit eleifend dictum
-              quisque tortor velit purus. Enim in gravida tortor sit.
-            </p>
           </div>
-          <button type="button" id="add-player-btn" onclick="addForm()">+ เพิ่ม</button>
-          <p class="add-player-info">*เพิ่มได้สูงสุด 4 คน</p>
-          <div id="formContainer">
-
+          <div id="image-preview-container-0"></div>
+          <label for="file-upload" class="file-label">
+    <button type="button" class="upload-doc-button" onclick="document.getElementById('file-upload-0').click()">
+              + แนบไฟล์เอกสาร
+            </button>
+          </label>
+          <input type="file" id="file-upload-0" name="file-upload-0" onchange="previewImage(0);" required />
+          <p class="file-upload-info">
+            *Lorem ipsum dolor sit amet consectetur. Nunc sit eleifend dictum
+            quisque tortor velit purus. Enim in gravida tortor sit.
+          </p>
+          <hr />
+          <div class="quanlity-player">
+            <button type="button" id="add-player-btn" onclick="addForm()" class="add-player-btn">
+              + เพิ่ม
+            </button>
+            <p class="add-player-info">*เพิ่มได้สูงสุด 4 ท่าน</p>
+            
           </div>
-          <button type="button" onclick="prevStep(1)">Previous</button>
-          <button type="button" onclick="nextStep(3)">Next</button>
+          <div id="formContainer"></div>
+          <div class="btn-control">
+            <button type="button" onclick="prevStep(1)">Previous</button>
+            <button type="button" onclick="nextStep(3)">Next</button>
+          </div>
         </form>
       </div>
     </div>
@@ -139,6 +146,8 @@
     </div>
   </form>
   <script src="https://kit.fontawesome.com/32a2f35189.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="js/script.js"></script>
   <script src="js/add-form.js"></script>
 </body>
