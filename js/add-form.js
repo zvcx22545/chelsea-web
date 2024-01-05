@@ -42,13 +42,7 @@ function addForm() {
       quisque tortor velit purus. Enim in gravida tortor sit.
     </p>
     <hr />
-    <div class="quanlity-player">
-      <button type="button" id="add-player-btn" onclick="addForm()" class="add-player-btn">
-        + เพิ่ม
-      </button>
-      <p class="add-player-info">*เพิ่มได้สูงสุด 4 ท่าน</p>
-      <div id="formContainer"></div>
-  </div>
+
     `;
     newForm.id = "form-section-" + formCount; // Update ID of the new form section
     newForm.style.marginTop = "10rem";
