@@ -104,14 +104,16 @@
         <input type="email" id="emailplayer" name="emailplayer" placeholder="กรุณากรอกอีเมล" required />
         <div class="form-group">
           <label for="file-upload" class="file-label">
-            บัตรประชาชน/หนังสือเดินทาง 
-            <button type="button" class="upload-btn" onclick="document.getElementById('file-upload').click()">+ แนบไฟล์เอกสาร</button>
+            บัตรประชาชน/หนังสือเดินทาง
+            <button type="button" class="upload-btn" onclick="document.getElementById('file-upload').click()">+
+              แนบไฟล์เอกสาร</button>
           </label>
           <input type="file" id="file-upload" name="file-upload" required />
-          <p class="file-upload-info">*Lorem ipsum dolor sit amet consectetur. Nunc sit eleifend dictum quisque tortor velit purus. Enim in gravida tortor sit.</p>
+          <p class="file-upload-info">*Lorem ipsum dolor sit amet consectetur. Nunc sit eleifend dictum quisque tortor
+            velit purus. Enim in gravida tortor sit.</p>
         </div>
-        <button type="button" class="add-file-btn">+ เพิ่ม</button>
-        <p class="add-file-info">*เพิ่มได้สูงสุด 4 หน้า</p>
+        <button type="button" id="add-player-btn">+ เพิ่ม</button>
+        <p class="add-player-info">*เพิ่มได้สูงสุด 4 คน</p>
         <button type="button" onclick="prevStep(1)">Previous</button>
         <button type="button" onclick="nextStep(3)">Next</button>
       </form>
@@ -128,6 +130,7 @@
   </form>
   <script src="https://kit.fontawesome.com/32a2f35189.js" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
+  <script src="js/add-form.js"></script>
 </body>
 
 </html>
