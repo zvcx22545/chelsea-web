@@ -15,9 +15,6 @@
   color: white;
 }
 
-.form-group {
-  margin-bottom: 15px;
-}
 
 label {
   display: block;
@@ -141,7 +138,7 @@ button:hover {
   -moz-appearance: none;   /* Removes default arrow for Mozilla browsers */
   appearance: none;
   background: url('https://cdn-icons-png.flaticon.com/512/25/25623.png') no-repeat right 2rem center; /* Custom arrow positioned slightly to the left */
-  background-size: 32px 32px; /* Set the size of the arrow */
+  background-size: 28px 28px; /* Set the size of the arrow */
   cursor: pointer; /* Changes the cursor to signify this is a dropdown */
 }
 

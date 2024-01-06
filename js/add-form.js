@@ -5,12 +5,15 @@ function addForm() {
       var formContainer = document.getElementById("formContainer");
       var newForm = document.createElement("div");
       newForm.innerHTML = `
-        <div class="Player-title">
-          <label for="nameplayer-${formCount}" class="add-player">คนที่ ${
-        formCount + 1
-      }</label>
-          <p style="color: #eb0000; font-size: 1.5rem">*</p>
-        </div>
+      <div class="title-header">
+      <div class="Player-title">
+        <label for="nameplayer-${formCount}" class="add-player">คนที่${
+          formCount + 1
+        }</label>
+        <p style="color: #eb0000; font-size: 1.5rem">*</p>
+      </div>
+      <div class="delete" onclick="removeForm(${formCount})">ลบ</div>
+    </div>
         <div class="sport-title">
         <label for="nameplayer${formCount}">กรอกชื่อ - นามสกุล</label>
         <p style="color: #eb0000; font-size: 1.5rem">*</p>
@@ -42,7 +45,6 @@ function addForm() {
       quisque tortor velit purus. Enim in gravida tortor sit.
     </p>
     <hr />
-
     `;
     newForm.id = "form-section-" + formCount; // Update ID of the new form section
     newForm.style.marginTop = "10rem";
@@ -86,5 +88,20 @@ function previewImage(formNumber) {
   } else {
     var containerId = "image-preview-container-" + formNumber;
     document.getElementById(containerId).innerHTML = "";
+  }
+}
+
+// Remove Form 
+
+function removeForm(formNumber) {
+  // หา DOM element ของฟอร์มที่ต้องการลบ
+  var formToRemove = document.getElementById("form-section-" + formNumber);
+
+  if (formToRemove) {
+      // ลบฟอร์มออกจาก DOM
+      formToRemove.remove();
+
+      // ลดจำนวนฟอร์มที่เหลือลง 1
+      formCount--;
   }
 }

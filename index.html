@@ -30,7 +30,7 @@
         scelerisque eu venenatis.
       </p>
       <!-- เส้นขั้นหน้าระหว่างตรงหัวข้อกับลงทะเบียน -->
-      <hr class="linetitle"/>
+      <hr class="linetitle" />
     </div>
   </div>
   <div id="form-steps">
@@ -85,9 +85,11 @@
       <div class="form-section" data-step="2">
         <!-- Form fields for step 2 -->
         <form action="" enctype="multipart/form-data">
-          <div class="Player-title">
-            <label for="name" class="add-player">คนที่1</label>
-            <p style="color: #eb0000; font-size: 1.5rem">*</p>
+          <div class="title-header">
+            <div class="Player-title">
+              <label for="name" class="add-player">คนที่1</label>
+              <p style="color: #eb0000; font-size: 1.5rem">*</p>
+            </div>
           </div>
           <div class="sport-title">
             <label for="nameplayer">กรอกชื่อ - นามสกุล</label>
@@ -98,7 +100,8 @@
             <label for="phoneplayer">เบอร์โทร</label>
             <p style="color: #eb0000; font-size: 1.5rem">*</p>
           </div>
-          <input type="tel" id="phoneplayer" name="phoneplayer" placeholder="กรุณาเบอร์โทร 10 หลัก" pattern="[0-9]{10}" required />
+          <input type="tel" id="phoneplayer" name="phoneplayer" placeholder="กรุณาเบอร์โทร 10 หลัก" pattern="[0-9]{10}"
+            required />
           <div class="sport-title">
             <label for="emailplayer">อีเมล</label>
             <p style="color: #eb0000; font-size: 1.5rem">*</p>
@@ -111,7 +114,7 @@
           </div>
           <div id="image-preview-container-0"></div>
           <label for="file-upload" class="file-label">
-    <button type="button" class="upload-doc-button" onclick="document.getElementById('file-upload-0').click()">
+            <button type="button" class="upload-doc-button" onclick="document.getElementById('file-upload-0').click()">
               + แนบไฟล์เอกสาร
             </button>
           </label>
@@ -121,14 +124,20 @@
             quisque tortor velit purus. Enim in gravida tortor sit.
           </p>
           <hr />
-        
-          <div id="formContainer"></div>
+
+          <div id="formContainer">
+            <div class="form-section">
+              <form action="" enctype="multipart/form-data">
+
+              </form>
+            </div>
+          </div>
           <div class="quanlity-player">
             <button type="button" id="add-player-btn" onclick="addForm()" class="add-player-btn">
               + เพิ่ม
             </button>
             <p class="add-player-info">*เพิ่มได้สูงสุด 4 ท่าน</p>
-            
+
           </div>
           <div class="btn-control">
             <button type="button" onclick="prevStep(1)">Previous</button>

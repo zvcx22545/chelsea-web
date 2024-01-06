@@ -89,3 +89,21 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.title-header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete
+{
+  color: red;
+  cursor: pointer;
+}
+
+.delete:hover
+{
+  text-decoration:underline;
+}

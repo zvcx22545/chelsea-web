@@ -45,10 +45,4 @@ function nextStep(stepNumber) {
   }
 }
 
-// ฟังก์ชัน addForm ของคุณที่มีการปรับปรุง
-function addForm() {
-  // โค้ดเดิมของคุณ...
-}
-
-
 
