@@ -1,10 +1,13 @@
 /* Reset margin and padding for all elements */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto&display=swap');
-* {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto&display=swap");
+* ,
+*::after,
+*::before
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter' ;
+  font-family: "Inter";
 }
 
 /* สไตล์แถบนำทาง */
@@ -23,8 +26,8 @@
   z-index: 10;
 }
 
-.content-homepage{
-  background-image: url('/img/homeTop-bg.png');
+.content-homepage {
+  background-image: url("/img/homeTop-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   /* padding: 2rem; */
@@ -33,15 +36,15 @@
   display: flex;
   justify-content: space-between;
 }
-.left-contents{
+.left-contents {
   /* margin-top: 50px; */
   text-align: left;
   width: 50%;
   padding: 20px;
 }
 
-.image-right{
-  background-image: url('/img/footballer.png');
+.image-right {
+  background-image: url("/img/footballer.png");
   height: 30rem;
   width: 50rem;
   /* position: absolute; */
@@ -96,15 +99,16 @@
 
 .innerContents {
   text-align: center;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* ---------------------------- */
 #form-steps {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 1.25rem;
+  gap: 10rem;
 }
 
 .step {
@@ -131,12 +135,12 @@
   margin-bottom: 2rem;
 }
 .main-contents{
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   margin-left: 5rem;
   /* 621746860103 */
 }
 
-btn >a{
+btn > a {
   color: white;
   text-decoration: none;
   margin-right: 1.25rem;
@@ -149,23 +153,25 @@ btn >a{
   margin-bottom: 1.25rem;
   margin-left: 5rem;
 }
-.main{
+.main {
   align-items: center;
   text-align: center;
   margin-top: 0.938rem;
 }
-.main input{
+.main input {
   margin-top: 0.938rem;
   width: 30rem;
   height: 2rem;
   border-radius: 0.313rem;
   padding: 0.313rem;
 }
-table, td, th{  
+table,
+td,
+th {
   border: 2px solid #ddd;
   text-align: center;
 }
-.taberdata{
+.taberdata {
   display: flex;
   justify-content: center;
   margin-top: 1.25rem;
@@ -174,66 +180,45 @@ table, td, th{
 table {
   border-collapse: collapse;
   width: 50%;
-  border: none;
  }
 th, td {
   padding: 0.938rem;
   width: 15.625rem;
   right: 0;
-  border: none;
-  border-right: 2px #05256F solid;
-  border-left: 2px #05256F solid;
-}
-.main-data{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
-.Winnner{
-  background-color: #05256F;
-  display: flex;
-  height: 2.5rem;
-  margin-left: 20rem;
-  margin-right: 20rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  border-radius: 5px;
-}
 .Title
 {
   color: #000;
-font-family: Inter;
-font-size: 32px;
-font-weight: 600;
-line-height: normal;
-margin-top: 8rem;
+  font-family: Inter;
+  font-size: clamp(1rem, 0.5455rem + 1.2121vw, 2rem);
+    font-weight: 600;
+  line-height: normal;
+  margin-top: 8rem;
 }
 
-.linetitle
-{
-  border-top: 1px solid #C4C4C4;
+.linetitle {
+  border-top: 1px solid #c4c4c4;
 }
 
-.Hreward{
+.Hreward {
   display: flex;
   color: white;
-  background-color: #050E4F;
+  background-color: #050e4f;
   height: auto;
   width: 100%;
   justify-content: space-between;
   padding: 2rem;
 }
-.rewardData{
+.rewardData {
   height: auto;
   width: 80%;
 }
-.topic{
+.topic {
   margin-top: 6.25rem;
   text-align: left;
 }
-.linef{
+.linef {
   height: auto;
   width: 0.5rem;
   background-color: white;
@@ -246,29 +231,22 @@ margin-top: 8rem;
   padding-right: 1.25rem;
   text-align: left;
 }
-.data2 {
-  display: flex;
-  margin-bottom: 3rem;
-  padding-right: 1.25rem;
-  margin-left: 3rem;
-  text-align: left;
-}
-.data3 {
+.data2{
   display: flex;
   margin-bottom: 3rem;
   padding-right: 1.25rem;
   margin-left: 6rem;
   text-align: left;
 }
-.data4 {
+.data3{
   display: flex;
   margin-bottom: 3rem;
   padding-right: 1.25rem;
   margin-left: 9rem;
   text-align: left;
 }
-.imagRigt{
-  background-image: url("/img/rightimageData.png"); 
+.imagRigt {
+  background-image: url("/img/rightimageData.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: center;
@@ -277,17 +255,17 @@ margin-top: 8rem;
   vertical-align: bottom;
 }
 
-.dataRegis{
+.dataRegis {
   display: flex;
   justify-content: space-between;
-  background-image: url('/img/bg.bottom.png');
+  background-image: url("/img/bg.bottom.png");
   background-color: #033061f3;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
 }
-.imagLeft{
-  background-image: url('/img/imageLeft.png');
+.imagLeft {
+  background-image: url("/img/imageLeft.png");
   /* background-color: #033061f3; */
   background-size: 80% 100%;
   background-repeat: no-repeat;
@@ -295,9 +273,8 @@ margin-top: 8rem;
   width: 50%;
 }
 .Dataright{
-  margin-top: 15rem;
-  width: calc(100% - 30%);
-  margin-bottom: 15rem;
+  margin-top: 10rem;
+  width: calc(100% - 50%);
 }
 
 /* Style the dropdown */
@@ -326,19 +303,18 @@ label {
   font-weight: bold;
   margin-right: 0.625rem;
 }
-.rewardCom{
+.rewardCom {
   display: flex;
   justify-content: center;
 }
-.dataReward{
+.dataReward {
   text-align: left;
 }
 
-li{
+li {
   margin-top: 0.875rem;
   margin-bottom: 0.875rem;
 }
-
 
 /* Base styles for the layout */
 .toggle-container {
@@ -357,7 +333,7 @@ li{
   cursor: pointer;
   user-select: none;
   background-color: white; /* Background is white by default */
-  color: #05256F; /* Text is black by default */
+  color: #05256f; /* Text is black by default */
   border-radius: 20px;
   padding: 15px;
   transition: all 0.3s ease-in-out;
@@ -369,7 +345,7 @@ li{
   right: 35px;
   width: 20px;
   height: 20px;
-  background-image: url('/img/caret-down-fill.svg');
+  background-image: url("/img/caret-down-fill.svg");
   color: white;
   background-repeat: no-repeat;
   transition: all 0.3s ease-in-out;
@@ -381,13 +357,13 @@ li{
 }
 
 .toggle-input:checked + .toggle-label {
-  background-color: #05256F; /* Background turns black when activated */
+  background-color: #05256f; /* Background turns black when activated */
   color: white; /* Text turns white when activated */
 }
 
 .toggle-input:checked + .toggle-label .toggle-handle {
   transform: translateX(0);
-  background-image: url('/img/caret-up-fill.svg');
+  background-image: url("/img/caret-up-fill.svg");
   background-repeat: no-repeat;
 }
 
@@ -404,10 +380,10 @@ li{
   display: block;
 }
 /* top main */
-.top-main{
-  background-image: url('/img/bg.bottom.png');
+.top-main {
+  background-image: url("/img/bg.bottom.png");
   background-repeat: no-repeat;
-  background-color: #050E4F;
+  background-color: #050e4f;
   background-size: 100%;
   height: 656px;
   text-align: center;
@@ -416,24 +392,21 @@ li{
   padding-right: 15rem;
   color: white;
 }
-button >a{
+button > a {
   text-decoration: none;
 }
-.top-main h1{
+.top-main h1 {
   margin-bottom: 1rem;
-}
-.top-main img{
-  width: 100%;
 }
 .top-main .topbtn{
   margin-top: 5rem;
 }
 
 /* footer */
-footer{
+footer {
   margin-top: 3.125rem;
-  background-image: url('/img/homeTop-bg.png');
-  background-color: #05256F;
+  background-image: url("/img/homeTop-bg.png");
+  background-color: #05256f;
   background-repeat: no-repeat;
   vertical-align: middle;
   align-items: center;
@@ -443,93 +416,27 @@ footer{
   padding-left: 5rem;
   padding-right: 5rem;
 }
-.topFooter{
+.topFooter {
   display: flex;
   justify-content: space-between;
-  
 }
-.footleft{
+.footleft {
   display: flex;
   width: 50%;
   text-align: left;
 }
-.footright{
+.footright {
   vertical-align: middle;
   display: flex;
   justify-content: right;
   width: 50%;
 }
-i{
+i {
   height: 2rem;
   width: 2rem;
   padding-left: 0.875rem;
   padding-right: 0.875rem;
 }
-
-.bottom-main{
-  margin-top: 5rem;
-  margin-right: 5rem;
-  margin-left: 5rem;
-}
-.bottom-main p{
-  margin-right: 5rem;
-  margin-left: 5rem;
-  margin-top: 1rem;
-}
-.bottom-main h2{
-  margin-top: 1rem;
-}
-
-.table-compete{
-  margin-top: 1.5rem;
-}
-.table-compete h3{
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-.table-compete p{
-  margin-bottom: 2rem;
-}
-.table-compete img{
-  margin-bottom: 2rem;
-  width: 100%;
-}
-
-
-.Result-compate{
-  margin-top: 1.5rem;
-  margin-bottom: 10rem;
-}
-.Result-compate h3{
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-.Result-compate p{
-  margin-bottom: 2rem;
-}
-.Result-compate img{
-  margin-bottom: 2rem;
-  width: 100%;
-}
-.setting{
-  margin-bottom: 1.5rem;
-  gap: 1rem;
-  display: flex;
-  justify-content: center;
-}
-.setting button{
-  background-color: #fff;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  height: 2rem;
-  color: #034694;
-  border: #034694 solid 1px;
-}
-.setting button:hover{
-  background-color: #034694;
-  color: #fff;
-}
-
 .footBottom{
   margin-top: 2rem;
   text-align: center;
@@ -568,54 +475,8 @@ i{
     text-align: center;
     margin-left: 10rem;
   }
-  .Dataright{
-    margin: 0 auto;
-  }
-  .imagLeft{
-    display: none;
-  }
-  .dataMain {
-    padding-left: 0;
-    text-align: center;
-  }
-  .rewardCom{
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-  .bottom-main{
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
-  .main-contents{
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .table-compete{
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  .table-compete p{
-    margin: 0 auto;
-    margin-bottom: 2rem;
-  }
-  .Result-compate{
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  .left-contents{
-    margin: 0 auto;
-  }
-  .Winnner{
-    background-color: #05256F;
-    display: flex;
-    height: 42px;
-    width: 100%;
-    margin-left: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 12px;
-    border-radius: 5px;
+  .navbar a,
+  .navbar-button {
+    margin: 5px 0;
   }
 }
