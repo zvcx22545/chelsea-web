@@ -71,8 +71,8 @@ function previewImage(formNumber) {
   reader.onloadend = function() {
     var img = document.createElement("img");
     img.src = reader.result;
-    img.style.maxWidth = "500px"; // Adjust size as needed
-    img.style.maxHeight = "500px";
+    img.style.maxWidth = "20%"; // Adjust size as needed
+    img.style.maxHeight = "20%";
     img.style.display = "flex";
     img.style.margin = "auto";
     img.style.marginTop = "2rem";

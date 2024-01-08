@@ -1,10 +1,13 @@
 /* Reset margin and padding for all elements */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto&display=swap');
-* {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto&display=swap");
+* ,
+*::after,
+*::before
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter";
 }
 
 /* สไตล์แถบนำทาง */
@@ -23,8 +26,8 @@
   z-index: 10;
 }
 
-.content-homepage{
-  background-image: url('/img/homeTop-bg.png');
+.content-homepage {
+  background-image: url("/img/homeTop-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   /* padding: 2rem; */
@@ -33,15 +36,15 @@
   display: flex;
   justify-content: space-between;
 }
-.left-contents{
+.left-contents {
   /* margin-top: 50px; */
   text-align: left;
   width: 50%;
   padding: 20px;
 }
 
-.image-right{
-  background-image: url('/img/footballer.png');
+.image-right {
+  background-image: url("/img/footballer.png");
   height: 30rem;
   width: 50rem;
   /* position: absolute; */
@@ -53,7 +56,7 @@
 
 /* รูปโลโก้ */
 .navbar-logo {
-  height: 50px; /* คุณสามารถปรับขนาดตามโลโก้จริงได้ */
+  height: 80%; /* คุณสามารถปรับขนาดตามโลโก้จริงได้ */
   margin-right: 1.25rem;
 }
 
@@ -83,7 +86,7 @@
 
 .bg-top {
   width: 100%;
-  margin-top: 7.5rem;
+  margin-top: 8.5rem;
 }
 /* .homeTop-bg{
   display: ;
@@ -96,15 +99,16 @@
 
 .innerContents {
   text-align: center;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* ---------------------------- */
 #form-steps {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 1.25rem;
+  gap: 10rem;
 }
 
 .step {
@@ -136,7 +140,7 @@
   /* 621746860103 */
 }
 
-btn >a{
+btn > a {
   color: white;
   text-decoration: none;
   margin-right: 1.25rem;
@@ -149,23 +153,25 @@ btn >a{
   margin-bottom: 1.25rem;
   margin-left: 5rem;
 }
-.main{
+.main {
   align-items: center;
   text-align: center;
   margin-top: 0.938rem;
 }
-.main input{
+.main input {
   margin-top: 0.938rem;
   width: 30rem;
   height: 2rem;
   border-radius: 0.313rem;
   padding: 0.313rem;
 }
-table, td, th{  
+table,
+td,
+th {
   border: 2px solid #ddd;
   text-align: center;
 }
-.taberdata{
+.taberdata {
   display: flex;
   justify-content: center;
   margin-top: 1.25rem;
@@ -184,64 +190,63 @@ th, td {
 .Title
 {
   color: #000;
-font-family: Inter;
-font-size: 32px;
-font-weight: 600;
-line-height: normal;
-margin-top: 8rem;
+  font-family: Inter;
+  font-size: clamp(1rem, 0.5455rem + 1.2121vw, 2rem);
+    font-weight: 600;
+  line-height: normal;
+  margin-top: 8rem;
 }
 
-.linetitle
-{
-  border-top: 1px solid #C4C4C4;
+.linetitle {
+  border-top: 1px solid #c4c4c4;
 }
 
-.Hreward{
+.Hreward {
   display: flex;
   color: white;
-  background-color: #050E4F;
+  background-color: #050e4f;
   height: auto;
   width: 100%;
   justify-content: space-between;
   padding: 2rem;
 }
-.rewardData{
+.rewardData {
   height: auto;
   width: 80%;
 }
-.topic{
+.topic {
   margin-top: 6.25rem;
   text-align: left;
 }
-.linef{
+.linef {
   height: auto;
-  width: 1rem;
+  width: 0.5rem;
   background-color: white;
   margin-right: 1rem;
 }
-.data1{
+.data1 {
   display: flex;
   margin-top: 3.75rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 3rem;
   padding-right: 1.25rem;
   text-align: left;
 }
 .data2{
   display: flex;
-  margin-bottom: 1.25rem;
+  margin-bottom: 3rem;
   padding-right: 1.25rem;
-  margin-left: 1.25rem;
+  margin-left: 6rem;
   text-align: left;
 }
 .data3{
   display: flex;
-  margin-bottom: 1.25rem;
+  margin-bottom: 3rem;
   padding-right: 1.25rem;
-  margin-left: 2.5rem;
+  margin-left: 9rem;
   text-align: left;
 }
-.imagRigt{
-  background-image: url("/img/rightimageData.png"); 
+.imagRigt {
+  background-image: url("/img/rightimageData.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: center;
@@ -250,21 +255,22 @@ margin-top: 8rem;
   vertical-align: bottom;
 }
 
-.dataRegis{
+.dataRegis {
   display: flex;
   justify-content: space-between;
-  background-image: url('/img/bg.bottom.png');
+  background-image: url("/img/bg.bottom.png");
   background-color: #033061f3;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
 }
-.imagLeft{
-  background-image: url('/img/imageLeft.png');
+.imagLeft {
+  background-image: url("/img/imageLeft.png");
   /* background-color: #033061f3; */
-  background-size: 100%;
+  background-size: 80% 100%;
   background-repeat: no-repeat;
-  width: 45%;
+  background-position: bottom left;
+  width: 50%;
 }
 .Dataright{
   margin-top: 10rem;
@@ -297,19 +303,18 @@ label {
   font-weight: bold;
   margin-right: 0.625rem;
 }
-.rewardCom{
+.rewardCom {
   display: flex;
   justify-content: center;
 }
-.dataReward{
+.dataReward {
   text-align: left;
 }
 
-li{
+li {
   margin-top: 0.875rem;
   margin-bottom: 0.875rem;
 }
-
 
 /* Base styles for the layout */
 .toggle-container {
@@ -328,7 +333,7 @@ li{
   cursor: pointer;
   user-select: none;
   background-color: white; /* Background is white by default */
-  color: #05256F; /* Text is black by default */
+  color: #05256f; /* Text is black by default */
   border-radius: 20px;
   padding: 15px;
   transition: all 0.3s ease-in-out;
@@ -340,7 +345,7 @@ li{
   right: 35px;
   width: 20px;
   height: 20px;
-  background-image: url('/img/caret-down-fill.svg');
+  background-image: url("/img/caret-down-fill.svg");
   color: white;
   background-repeat: no-repeat;
   transition: all 0.3s ease-in-out;
@@ -348,16 +353,17 @@ li{
 
 .toggle-text {
   margin-left: 35px;
+  font-size: 1.5rem;
 }
 
 .toggle-input:checked + .toggle-label {
-  background-color: #05256F; /* Background turns black when activated */
+  background-color: #05256f; /* Background turns black when activated */
   color: white; /* Text turns white when activated */
 }
 
 .toggle-input:checked + .toggle-label .toggle-handle {
   transform: translateX(0);
-  background-image: url('/img/caret-up-fill.svg');
+  background-image: url("/img/caret-up-fill.svg");
   background-repeat: no-repeat;
 }
 
@@ -365,7 +371,7 @@ li{
 .toggle-content {
   display: none;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: #ffffffb6;
   border: 1px solid #ddd;
   border-radius: 20px;
 }
@@ -374,10 +380,11 @@ li{
   display: block;
 }
 /* top main */
-.top-main{
-  background-image: url('/img/bg.bottom.png');
+.top-main {
+  background-image: url("/img/bg.bottom.png");
   background-repeat: no-repeat;
-  background-color: #050E4F;
+  background-color: #050e4f;
+  background-size: 100%;
   height: 656px;
   text-align: center;
   padding: 2rem;
@@ -385,10 +392,10 @@ li{
   padding-right: 15rem;
   color: white;
 }
-button >a{
+button > a {
   text-decoration: none;
 }
-.top-main h1{
+.top-main h1 {
   margin-bottom: 1rem;
 }
 .top-main .topbtn{
@@ -396,10 +403,10 @@ button >a{
 }
 
 /* footer */
-footer{
+footer {
   margin-top: 3.125rem;
-  background-image: url('/img/homeTop-bg.png');
-  background-color: #05256F;
+  background-image: url("/img/homeTop-bg.png");
+  background-color: #05256f;
   background-repeat: no-repeat;
   vertical-align: middle;
   align-items: center;
@@ -409,23 +416,22 @@ footer{
   padding-left: 5rem;
   padding-right: 5rem;
 }
-.topFooter{
+.topFooter {
   display: flex;
   justify-content: space-between;
-  
 }
-.footleft{
+.footleft {
   display: flex;
   width: 50%;
   text-align: left;
 }
-.footright{
+.footright {
   vertical-align: middle;
   display: flex;
   justify-content: right;
   width: 50%;
 }
-i{
+i {
   height: 2rem;
   width: 2rem;
   padding-left: 0.875rem;
@@ -435,11 +441,39 @@ i{
   margin-top: 2rem;
   text-align: center;
 }
-/* เคล็ดลับการปรับแต่งเมื่อหน้าจอเล็กลง */
-@media (max-width: 768px) {
-  .navbar {
+/* CSS Media Queries สำหรับแท็บเล็ต 768 */ 
+@media screen and (max-width: 1180px) { 
+  .rewardData {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  .image-right{
+    display: none;
+  }
+  
+  .top-main img{
+    display: none;
+  }
+  .data1, .data2, .data3, .data4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 5.5rem;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .imagRigt {
+    display: none;
+  }
+  .linef{
+    display: none;
+  }
+  .topic{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10rem;
   }
   .navbar a,
   .navbar-button {
