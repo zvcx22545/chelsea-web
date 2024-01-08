@@ -19,7 +19,7 @@
       <button class="navbar-button">ลงทะเบียน</button>
     </div>
   </div>
-  <img src="img/top-bg.png" class="bg-top" alt />
+  <img src="img/top-bg.png" class="bg-top" alt="" />
   <div class="content">
     <div class="innerContents">
       <h2 class="Title">
@@ -40,11 +40,17 @@
     </div>
   </div>
   <div id="form-steps">
-    <div class="step active" data-step="1">1</div>
-    <div class="step" data-step="2">2</div>
-    <div class="step" data-step="3">3</div>
-    <div class="step" data-step="4">4</div>
+    <div class="step-container">
+      <div class="step active" data-step="1">1</div>
+      <div class="step-line"></div>
+      <div class="step" data-step="2">2</div>
+      <div class="step-line"></div>
+      <div class="step" data-step="3">3</div>
+      <div class="step-line"></div>
+      <div class="step" data-step="4">4</div>
+    </div>
   </div>
+  
 
   <form id="conditional-form">
     <div class="form-section" data-step="1">
@@ -55,7 +61,7 @@
       </div>
       <div class="select-stadium">
         <select id="stadium-select" name="stadium-select" required class="angle-down">
-          <option value>กรุณาเลือกสนามแข่งขัน</option>
+          <option value="">กรุณาเลือกสนามแข่งขัน</option>
           <!-- Add more options here -->
           <option value="stadium1">สนาม Kick Off Arena CMI</option>
           <option value="stadium2">สนาม Sport Arena</option>
@@ -94,7 +100,7 @@
     <div id="initialForm">
       <div class="form-section" data-step="2">
         <!-- Form fields for step 2 -->
-        <form action enctype="multipart/form-data">
+        <form action="" enctype="multipart/form-data">
           <div class="title-header">
             <div class="Player-title">
               <label for="name" class="add-player">คนที่1</label>
@@ -137,7 +143,7 @@
 
           <div id="formContainer">
             <div class="form-section">
-              <form action enctype="multipart/form-data"></form>
+              <form action="" enctype="multipart/form-data"></form>
             </div>
           </div>
           <div class="quanlity-player">
@@ -168,7 +174,7 @@
           <label for="collapsible-head" class="field-player">เช็คข้อมูลผู้สมัคร</label>
           <div class="all-player-data">
             <hr class="hidden-hr" />
-            <form action>
+            <form action="">
               <div class="title-header">
                 <div class="Player-title">
                   <label for="name" class="add-player">ผู้สมัครคนที่ 1

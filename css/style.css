@@ -477,7 +477,13 @@ i {
   .collapsible .field-player::after
   {
     background-size: 80% 80% !important;
+    transform-origin: center !important;
+    top: 2%;
+   
   }
+  .collapsible input:checked + .field-player::after {
+    transform: rotate(0deg) !important;
+  }  
 }
 
 @media (max-width: 1024px) {
@@ -495,10 +501,15 @@ i {
     width: 50px !important;
     height: 50px !important;
   }
-  .collapsible .field-player::after
+ .field-player::after
   {
     background-size: 60% 60% !important;
+    top: 5%;
   }
+  .collapsible input:checked + .field-player::after {
+    transform: rotate(0deg) !important;
+  }
+  
 }
 @media (max-width: 500px) {
   #form-steps {
@@ -515,6 +526,10 @@ i {
   .collapsible .field-player::after
   {
     background-size: 40% 40% !important;
+    top: 0%;
+  }
+  .collapsible input:checked + .field-player::after {
+    transform: rotate(0deg) !important;
   }
   .confirm-btn
   {
