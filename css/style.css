@@ -1,10 +1,13 @@
 /* Reset margin and padding for all elements */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto&display=swap');
-* {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;600&family=Roboto&display=swap");
+* ,
+*::after,
+*::before
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter' ;
+  font-family: "Inter";
 }
 
 /* สไตล์แถบนำทาง */
@@ -23,8 +26,8 @@
   z-index: 10;
 }
 
-.content-homepage{
-  background-image: url('/img/homeTop-bg.png');
+.content-homepage {
+  background-image: url("/img/homeTop-bg.png");
   background-repeat: no-repeat;
   background-size: 100%;
   /* padding: 2rem; */
@@ -33,15 +36,15 @@
   display: flex;
   justify-content: space-between;
 }
-.left-contents{
+.left-contents {
   /* margin-top: 50px; */
   text-align: left;
   width: 50%;
   padding: 20px;
 }
 
-.image-right{
-  background-image: url('/img/footballer.png');
+.image-right {
+  background-image: url("/img/footballer.png");
   height: 30rem;
   width: 50rem;
   /* position: absolute; */
@@ -96,8 +99,8 @@
 
 .innerContents {
   text-align: center;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* ---------------------------- */
@@ -131,13 +134,13 @@
   margin: auto;
   margin-bottom: 2rem;
 }
-.main-contents{
+.main-contents {
   margin-bottom: 1.25rem;
   margin-left: 5rem;
   /* 621746860103 */
 }
 
-btn >a{
+btn > a {
   color: white;
   text-decoration: none;
   margin-right: 1.25rem;
@@ -150,23 +153,25 @@ btn >a{
   margin-bottom: 1.25rem;
   margin-left: 5rem;
 }
-.main{
+.main {
   align-items: center;
   text-align: center;
   margin-top: 0.938rem;
 }
-.main input{
+.main input {
   margin-top: 0.938rem;
   width: 30rem;
   height: 2rem;
   border-radius: 0.313rem;
   padding: 0.313rem;
 }
-table, td, th{  
+table,
+td,
+th {
   border: 2px solid #ddd;
   text-align: center;
 }
-.taberdata{
+.taberdata {
   display: flex;
   justify-content: center;
   margin-top: 1.25rem;
@@ -175,74 +180,73 @@ table, td, th{
 table {
   border-collapse: collapse;
   width: 50%;
- }
-th, td {
+}
+th,
+td {
   padding: 0.938rem;
   width: 15.625rem;
   right: 0;
 }
 
-.Title
-{
+.Title {
   color: #000;
-font-family: Inter;
-font-size: 32px;
-font-weight: 600;
-line-height: normal;
-margin-top: 8rem;
+  font-family: Inter;
+  font-size: clamp(1rem, 0.5455rem + 1.2121vw, 2rem);
+    font-weight: 600;
+  line-height: normal;
+  margin-top: 8rem;
 }
 
-.linetitle
-{
-  border-top: 1px solid #C4C4C4;
+.linetitle {
+  border-top: 1px solid #c4c4c4;
 }
 
-.Hreward{
+.Hreward {
   display: flex;
   color: white;
-  background-color: #050E4F;
+  background-color: #050e4f;
   height: auto;
   width: 100%;
   justify-content: space-between;
   padding: 2rem;
 }
-.rewardData{
+.rewardData {
   height: auto;
   width: 80%;
 }
-.topic{
+.topic {
   margin-top: 6.25rem;
   text-align: left;
 }
-.linef{
+.linef {
   height: auto;
   width: 1rem;
   background-color: white;
   margin-right: 1rem;
 }
-.data1{
+.data1 {
   display: flex;
   margin-top: 3.75rem;
   margin-bottom: 1.25rem;
   padding-right: 1.25rem;
   text-align: left;
 }
-.data2{
+.data2 {
   display: flex;
   margin-bottom: 1.25rem;
   padding-right: 1.25rem;
   margin-left: 1.25rem;
   text-align: left;
 }
-.data3{
+.data3 {
   display: flex;
   margin-bottom: 1.25rem;
   padding-right: 1.25rem;
   margin-left: 2.5rem;
   text-align: left;
 }
-.imagRigt{
-  background-image: url("/img/rightimageData.png"); 
+.imagRigt {
+  background-image: url("/img/rightimageData.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: center;
@@ -251,23 +255,23 @@ margin-top: 8rem;
   vertical-align: bottom;
 }
 
-.dataRegis{
+.dataRegis {
   display: flex;
   justify-content: space-between;
-  background-image: url('/img/bg.bottom.png');
+  background-image: url("/img/bg.bottom.png");
   background-color: #033061f3;
   background-size: 100%;
   background-repeat: no-repeat;
   height: 100vh;
 }
-.imagLeft{
-  background-image: url('/img/imageLeft.png');
+.imagLeft {
+  background-image: url("/img/imageLeft.png");
   /* background-color: #033061f3; */
   background-size: 100%;
   background-repeat: no-repeat;
   width: 45%;
 }
-.Dataright{
+.Dataright {
   margin-top: 10rem;
   width: calc(100% - 50%);
 }
@@ -298,19 +302,18 @@ label {
   font-weight: bold;
   margin-right: 0.625rem;
 }
-.rewardCom{
+.rewardCom {
   display: flex;
   justify-content: center;
 }
-.dataReward{
+.dataReward {
   text-align: left;
 }
 
-li{
+li {
   margin-top: 0.875rem;
   margin-bottom: 0.875rem;
 }
-
 
 /* Base styles for the layout */
 .toggle-container {
@@ -329,7 +332,7 @@ li{
   cursor: pointer;
   user-select: none;
   background-color: white; /* Background is white by default */
-  color: #05256F; /* Text is black by default */
+  color: #05256f; /* Text is black by default */
   border-radius: 20px;
   padding: 15px;
   transition: all 0.3s ease-in-out;
@@ -341,7 +344,7 @@ li{
   right: 35px;
   width: 20px;
   height: 20px;
-  background-image: url('/img/caret-down-fill.svg');
+  background-image: url("/img/caret-down-fill.svg");
   color: white;
   background-repeat: no-repeat;
   transition: all 0.3s ease-in-out;
@@ -352,13 +355,13 @@ li{
 }
 
 .toggle-input:checked + .toggle-label {
-  background-color: #05256F; /* Background turns black when activated */
+  background-color: #05256f; /* Background turns black when activated */
   color: white; /* Text turns white when activated */
 }
 
 .toggle-input:checked + .toggle-label .toggle-handle {
   transform: translateX(0);
-  background-image: url('/img/caret-up-fill.svg');
+  background-image: url("/img/caret-up-fill.svg");
   background-repeat: no-repeat;
 }
 
@@ -375,10 +378,10 @@ li{
   display: block;
 }
 /* top main */
-.top-main{
-  background-image: url('/img/bg.bottom.png');
+.top-main {
+  background-image: url("/img/bg.bottom.png");
   background-repeat: no-repeat;
-  background-color: #050E4F;
+  background-color: #050e4f;
   background-size: 100%;
   height: 656px;
   text-align: center;
@@ -387,21 +390,21 @@ li{
   padding-right: 15rem;
   color: white;
 }
-button >a{
+button > a {
   text-decoration: none;
 }
-.top-main h1{
+.top-main h1 {
   margin-bottom: 1rem;
 }
-.top-main .topbtn{
+.top-main .topbtn {
   margin-top: 5rem;
 }
 
 /* footer */
-footer{
+footer {
   margin-top: 3.125rem;
-  background-image: url('/img/homeTop-bg.png');
-  background-color: #05256F;
+  background-image: url("/img/homeTop-bg.png");
+  background-color: #05256f;
   background-repeat: no-repeat;
   vertical-align: middle;
   align-items: center;
@@ -411,29 +414,28 @@ footer{
   padding-left: 5rem;
   padding-right: 5rem;
 }
-.topFooter{
+.topFooter {
   display: flex;
   justify-content: space-between;
-  
 }
-.footleft{
+.footleft {
   display: flex;
   width: 50%;
   text-align: left;
 }
-.footright{
+.footright {
   vertical-align: middle;
   display: flex;
   justify-content: right;
   width: 50%;
 }
-i{
+i {
   height: 2rem;
   width: 2rem;
   padding-left: 0.875rem;
   padding-right: 0.875rem;
 }
-.footBottom{
+.footBottom {
   margin-top: 2rem;
   text-align: center;
 }
@@ -447,4 +449,82 @@ i{
   .navbar-button {
     margin: 5px 0;
   }
+}
+@media (max-width: 1500px) {
+  #form-steps {
+    gap: 7rem;
+  }
+  .step
+  {
+    width: 90px !important;
+    height: 90px !important;
+  }
+}
+@media (max-width: 1300px) {
+  #form-steps {
+    gap: 7rem;
+  }
+  .step
+  {
+    width: 75px !important;
+    height: 75px !important;
+  }
+}
+@media (max-width: 1200px) {
+  #form-steps {
+    gap: 6rem;
+  }
+  .collapsible .field-player::after
+  {
+    background-size: 80% 80% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #form-steps {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 840px) {
+  #form-steps {
+    gap: 2rem;
+  }
+  .step
+  {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .collapsible .field-player::after
+  {
+    background-size: 60% 60% !important;
+  }
+}
+@media (max-width: 500px) {
+  #form-steps {
+    gap: 1rem;
+  }
+  .step
+  {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .select-stadium select {
+    background-size: 14px 14px !important;
+  }
+  .collapsible .field-player::after
+  {
+    background-size: 40% 40% !important;
+  }
+  .confirm-btn
+  {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .quanlity-player
+  {
+    flex-direction: column;
+  }
+
 }

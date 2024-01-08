@@ -80,7 +80,8 @@
   margin-bottom: 1rem;
 }
 .btn-control > button {
-  width: 196px;
+  max-width: 196px;
+  font-size: clamp(0.75rem, 0.6842rem + 0.2632vw, 1rem);
 }
 
 #image-preview-container-0 {
@@ -107,7 +108,7 @@
 .field-name {
   color: #0b266b;
   font-family: Inter;
-  font-size: 32px;
+  font-size: clamp(1rem, 0.5455rem + 1.2121vw, 2rem);
   font-weight: 600;
   line-height: normal;
   margin-bottom: 1.688rem;
@@ -117,7 +118,7 @@
 .select-field {
   color: #333;
   font-family: Inter;
-  font-size: 24px;
+  font-size: clamp(0.875rem, 0.5909rem + 0.7576vw, 1.5rem);
   font-weight: 400;
   line-height: normal;
 }

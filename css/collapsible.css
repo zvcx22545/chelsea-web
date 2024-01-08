@@ -11,8 +11,7 @@
 .collapsible .field-player {
   position: relative;
   color: #0b266b;
-  font-size: 32px;
-  font-style: normal;
+  font-size: clamp(1rem, 0.5455rem + 1.2121vw, 2rem);  font-style: normal;
   font-weight: 600;
   display: block;
   margin-bottom: 10px;
@@ -36,7 +35,7 @@
   background: url(/img/caret-down-fill.svg) no-repeat 0 0;
   transform: rotate(-90deg);
   transition: all 0.3s ease;
-  background-size: 2.938rem 2.938rem;
+  background-size: 100% 100%;
 }
 .collapsible input:checked + .field-player::after {
   transform: rotate(0deg);
@@ -63,3 +62,7 @@
     margin-bottom: 2rem;
   }
 
+.thank-campagin
+{
+  text-align: center;
+}

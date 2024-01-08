@@ -19,15 +19,19 @@
       <button class="navbar-button">ลงทะเบียน</button>
     </div>
   </div>
-  <img src="img/top-bg.png" class="bg-top" alt="" />
+  <img src="img/top-bg.png" class="bg-top" alt />
   <div class="content">
     <div class="innerContents">
-
       <h2 class="Title">
         ลงทะเบียนเพื่อเข้าร่วมโครงการ “SINGHA WORLD OF FOOTBALL SKILLS
         CHALLENGE”
       </h2>
-      <p style="padding: 2rem 2rem">
+      <p style="
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            font-size: clamp(0.75rem, 0.5795rem + 0.4545vw, 1.125rem);
+            padding: 0rem 1rem;
+          ">
         จัดการแข่งขันโดย บริษัท สิงห์ คอร์เปอเรชั่น จำกัด
         ผู้สนับสนุนสโมสรฟุตบอลเชลซีอย่างเป็นทางการ
       </p>
@@ -51,7 +55,7 @@
       </div>
       <div class="select-stadium">
         <select id="stadium-select" name="stadium-select" required class="angle-down">
-          <option value="">กรุณาเลือกสนามแข่งขัน</option>
+          <option value>กรุณาเลือกสนามแข่งขัน</option>
           <!-- Add more options here -->
           <option value="stadium1">สนาม Kick Off Arena CMI</option>
           <option value="stadium2">สนาม Sport Arena</option>
@@ -90,7 +94,7 @@
     <div id="initialForm">
       <div class="form-section" data-step="2">
         <!-- Form fields for step 2 -->
-        <form action="" enctype="multipart/form-data">
+        <form action enctype="multipart/form-data">
           <div class="title-header">
             <div class="Player-title">
               <label for="name" class="add-player">คนที่1</label>
@@ -133,7 +137,7 @@
 
           <div id="formContainer">
             <div class="form-section">
-              <form action="" enctype="multipart/form-data"></form>
+              <form action enctype="multipart/form-data"></form>
             </div>
           </div>
           <div class="quanlity-player">
@@ -160,14 +164,15 @@
       </div>
       <div class="data-player">
         <div class="collapsible">
-          <input type="checkbox" id="collapsible-head">
+          <input type="checkbox" id="collapsible-head" />
           <label for="collapsible-head" class="field-player">เช็คข้อมูลผู้สมัคร</label>
           <div class="all-player-data">
-            <hr class="hidden-hr">
-            <form action="">
+            <hr class="hidden-hr" />
+            <form action>
               <div class="title-header">
                 <div class="Player-title">
-                  <label for="name" class="add-player">ผู้สมัครคนที่ 1 </label>
+                  <label for="name" class="add-player">ผู้สมัครคนที่ 1
+                  </label>
                   <p style="color: #eb0000; font-size: 1.5rem">*</p>
                 </div>
               </div>
@@ -180,14 +185,16 @@
                 <label for="phoneplayer-1">เบอร์โทร</label>
                 <p style="color: #eb0000; font-size: 1.5rem">*</p>
               </div>
-              <input type="tel" id="phoneplayer-1" name="phoneplayer" placeholder="กรุณาเบอร์โทร 10 หลัก" pattern="[0-9]{10}"
-                required />
+              <input type="tel" id="phoneplayer-1" name="phoneplayer" placeholder="กรุณาเบอร์โทร 10 หลัก"
+                pattern="[0-9]{10}" required />
               <div class="sport-title">
                 <label for="emailplayer-1">อีเมล</label>
                 <p style="color: #eb0000; font-size: 1.5rem">*</p>
               </div>
               <input type="email" id="emailplayer-1" name="emailplayer" placeholder="กรุณากรอกอีเมล" required />
-              <button class="confirm-player" type="submit">ยืนยันข้อมูล</button>
+              <button class="confirm-player" type="submit">
+                ยืนยันข้อมูล
+              </button>
             </form>
           </div>
         </div>
@@ -200,14 +207,25 @@
     <div class="form-section" data-step="4" style="display: none">
       <!-- Form fields for step 4 -->
       <div class="thank-campagin">
-        <h1>ขอบคุณที่ลงทะเบียนเข้าร่วมกิจกรรมค่ะ/ครับ</h1>
-        <p>
+        <h1 class="thank-activitie">
+          ขอบคุณที่ลงทะเบียนเข้าร่วมกิจกรรมค่ะ/ครับ
+        </h1>
+        <p style="
+              margin-bottom: 2rem;
+              margin-top: 2rem;
+              font-size: clamp(0.75rem, 0.5795rem + 0.4545vw, 1.125rem);
+              padding: 0rem 1rem;
+            ">
           จัดการแข่งขันโดย บริษัท สิงห์ คอร์เปอเรชั่น จำกัด
           ผู้สนับสนุนสโมสรฟุตบอลเชลซีอย่างเป็นทางการ
         </p>
       </div>
-      <button type="button" onclick="prevStep(3)">Previous</button>
-      <button type="submit">Submit</button>
+      <div class="confirm-btn">
+        <button type="button" onclick="prevStep(3)">Previous</button>
+        <button type="submit" class="sign-up">
+          บันทุกข้อมูลการลงทะเบียน
+        </button>
+      </div>
     </div>
   </form>
   <script src="https://kit.fontawesome.com/32a2f35189.js" crossorigin="anonymous"></script>
