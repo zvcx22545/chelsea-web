@@ -5,6 +5,7 @@ function addForm() {
       var formContainer = document.getElementById("formContainer");
       var newForm = document.createElement("div");
       newForm.innerHTML = `
+      <hr style="margin-bottom: 1rem;">
       <div class="title-header">
       <div class="Player-title">
         <label for="nameplayer-${formCount}" class="add-player">คนที่${
