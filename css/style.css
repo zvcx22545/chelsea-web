@@ -103,8 +103,9 @@
 /* ---------------------------- */
 #form-steps {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 1.25rem;
+  gap: 10rem;
 }
 
 .step {
