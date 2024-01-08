@@ -53,7 +53,7 @@
 
 /* รูปโลโก้ */
 .navbar-logo {
-  height: 50px; /* คุณสามารถปรับขนาดตามโลโก้จริงได้ */
+  height: 80%; /* คุณสามารถปรับขนาดตามโลโก้จริงได้ */
   margin-right: 1.25rem;
 }
 
@@ -83,7 +83,7 @@
 
 .bg-top {
   width: 100%;
-  margin-top: 7.5rem;
+  margin-top: 8.5rem;
 }
 /* .homeTop-bg{
   display: ;
@@ -131,7 +131,7 @@
   margin-bottom: 2rem;
 }
 .main-contents{
-  margin-bottom: 1.25rem;
+  margin-bottom: 2rem;
   margin-left: 5rem;
   /* 621746860103 */
 }
@@ -174,13 +174,33 @@ table, td, th{
 table {
   border-collapse: collapse;
   width: 50%;
+  border: none;
  }
 th, td {
   padding: 0.938rem;
   width: 15.625rem;
   right: 0;
+  border: none;
+  border-right: 2px #05256F solid;
+  border-left: 2px #05256F solid;
+}
+.main-data{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
+.Winnner{
+  background-color: #05256F;
+  display: flex;
+  height: 2.5rem;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
 .Title
 {
   color: #000;
@@ -215,29 +235,36 @@ margin-top: 8rem;
 }
 .linef{
   height: auto;
-  width: 1rem;
+  width: 0.5rem;
   background-color: white;
   margin-right: 1rem;
 }
-.data1{
+.data1 {
   display: flex;
   margin-top: 3.75rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 3rem;
   padding-right: 1.25rem;
   text-align: left;
 }
-.data2{
+.data2 {
   display: flex;
-  margin-bottom: 1.25rem;
+  margin-bottom: 3rem;
   padding-right: 1.25rem;
-  margin-left: 1.25rem;
+  margin-left: 3rem;
   text-align: left;
 }
-.data3{
+.data3 {
   display: flex;
-  margin-bottom: 1.25rem;
+  margin-bottom: 3rem;
   padding-right: 1.25rem;
-  margin-left: 2.5rem;
+  margin-left: 6rem;
+  text-align: left;
+}
+.data4 {
+  display: flex;
+  margin-bottom: 3rem;
+  padding-right: 1.25rem;
+  margin-left: 9rem;
   text-align: left;
 }
 .imagRigt{
@@ -255,20 +282,22 @@ margin-top: 8rem;
   justify-content: space-between;
   background-image: url('/img/bg.bottom.png');
   background-color: #033061f3;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
 }
 .imagLeft{
   background-image: url('/img/imageLeft.png');
   /* background-color: #033061f3; */
-  background-size: 100%;
+  background-size: 80% 100%;
   background-repeat: no-repeat;
-  width: 45%;
+  background-position: bottom left;
+  width: 50%;
 }
 .Dataright{
-  margin-top: 10rem;
-  width: calc(100% - 50%);
+  margin-top: 15rem;
+  width: calc(100% - 30%);
+  margin-bottom: 15rem;
 }
 
 /* Style the dropdown */
@@ -348,6 +377,7 @@ li{
 
 .toggle-text {
   margin-left: 35px;
+  font-size: 1.5rem;
 }
 
 .toggle-input:checked + .toggle-label {
@@ -365,7 +395,7 @@ li{
 .toggle-content {
   display: none;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: #ffffffb6;
   border: 1px solid #ddd;
   border-radius: 20px;
 }
@@ -391,6 +421,9 @@ button >a{
 }
 .top-main h1{
   margin-bottom: 1rem;
+}
+.top-main img{
+  width: 100%;
 }
 .top-main .topbtn{
   margin-top: 5rem;
@@ -432,18 +465,157 @@ i{
   padding-left: 0.875rem;
   padding-right: 0.875rem;
 }
+
+.bottom-main{
+  margin-top: 5rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+.bottom-main p{
+  margin-right: 5rem;
+  margin-left: 5rem;
+  margin-top: 1rem;
+}
+.bottom-main h2{
+  margin-top: 1rem;
+}
+
+.table-compete{
+  margin-top: 1.5rem;
+}
+.table-compete h3{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.table-compete p{
+  margin-bottom: 2rem;
+}
+.table-compete img{
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+
+.Result-compate{
+  margin-top: 1.5rem;
+  margin-bottom: 10rem;
+}
+.Result-compate h3{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.Result-compate p{
+  margin-bottom: 2rem;
+}
+.Result-compate img{
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.setting{
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.setting button{
+  background-color: #fff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 2rem;
+  color: #034694;
+  border: #034694 solid 1px;
+}
+.setting button:hover{
+  background-color: #034694;
+  color: #fff;
+}
+
 .footBottom{
   margin-top: 2rem;
   text-align: center;
 }
-/* เคล็ดลับการปรับแต่งเมื่อหน้าจอเล็กลง */
-@media (max-width: 768px) {
-  .navbar {
+/* CSS Media Queries สำหรับแท็บเล็ต 768 */ 
+@media screen and (max-width: 1180px) { 
+  .rewardData {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
-  .navbar a,
-  .navbar-button {
-    margin: 5px 0;
+  .image-right{
+    display: none;
+  }
+  
+  .top-main img{
+    display: none;
+  }
+  .data1, .data2, .data3, .data4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 5.5rem;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .imagRigt {
+    display: none;
+  }
+  .linef{
+    display: none;
+  }
+  .topic{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 10rem;
+  }
+  .Dataright{
+    margin: 0 auto;
+  }
+  .imagLeft{
+    display: none;
+  }
+  .dataMain {
+    padding-left: 0;
+    text-align: center;
+  }
+  .rewardCom{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .bottom-main{
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  .main-contents{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .table-compete{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .table-compete p{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .Result-compate{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .left-contents{
+    margin: 0 auto;
+  }
+  .Winnner{
+    background-color: #05256F;
+    display: flex;
+    height: 42px;
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
   }
 }
