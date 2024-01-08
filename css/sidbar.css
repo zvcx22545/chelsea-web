@@ -47,7 +47,7 @@ button:hover{
     color: white;
     border-radius: 5px;
 }
-button a{
+button>a{
     text-decoration: none;
     color: inherit;
 }
