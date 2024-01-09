@@ -9,6 +9,10 @@
   box-sizing: border-box;
   font-family: "Inter";
 }
+#news,#contact {
+  margin-top: 0; /* เริ่มต้นที่ 0 */
+  transition: margin-top 0.5s ease; /* ใช้การเปลี่ยนแปลง margin-top ด้วย animation ให้มีความสามารถในการเลื่อน */
+}
 
 /* สไตล์แถบนำทาง */
 .navbar {
@@ -70,9 +74,14 @@
 }
 
 /* ปุ่มบนแถบนำทาง */
-.navbar-button {
+.navbar-button{
+  background-color: #00000000;
+  border: none;
+}
+
+.navbar-button a{
   padding: 10px 20px;
-  background-color: white;
+  background-color: white; 
   color: #034694; /* สีน้ำเงินของ Chelsea */
   border: none;
   border-radius: 5px;
@@ -80,7 +89,7 @@
   margin-left: auto; /* ย้ายปุ่มไปทางขวา */
 }
 
-.navbar-button:hover {
+.navbar-button :hover {
   background-color: #033161; /* สีน้ำเงินเข้มสำหรับเอฟเฟกต์ hover */
   color: white;
 }
