@@ -57,7 +57,7 @@ function addForm() {
       title: "แจ้งเตือน!",
       text: "สามารถเพิ่มฟอร์มได้สูงสุด 4 ฟอร์ม",
       icon: "warning",
-      confirmButtonText: "ตกลง",
+      confirmButtonText: "ตกลง"
     });
   }
 }
