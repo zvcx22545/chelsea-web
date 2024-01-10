@@ -392,6 +392,7 @@ label {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
+  
 }
 
 .dataReward {
@@ -802,15 +803,27 @@ i {
   #form-steps {
     gap: 1rem;
   }
+  .Result-compate .setting{
+    margin: 0 auto;
+    width: 50%;
+  }
   .table-compete u{
     display: none;
   }
+  .dataReward{
+    align-items: center;
+    width: 90%;
+  }
   .dataReward btn>a {
     margin: 0 auto;
-    font-size: 16px;
-    padding: 0 10rem;
+    font-size: 0.875rem;
+    text-align: center;
+    width: auto;
   }
-  
+  th,
+  td{
+    font-size: 0.8rem;
+  }
   .step {
     width: 50px !important;
     height: 50px !important;
@@ -922,6 +935,12 @@ i {
     position: absolute;
     right: 1rem;
     top: 0.6875rem;
+  }
+}
+@media (max-width:480px){
+  .Result-compate .setting{
+    margin: 0 auto;
+    width: 75%;
   }
 }
 
