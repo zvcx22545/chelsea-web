@@ -855,7 +855,9 @@ i {
   .confirm-btn {
     flex-direction: column;
   }
-
+  .table-compete u{
+    display: none;
+  }
   
 }
 
