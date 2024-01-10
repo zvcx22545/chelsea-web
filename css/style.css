@@ -890,6 +890,7 @@ i {
     position: relative;
     flex-direction: column;
   }
+ 
 
   .menu-active {
     display: block;
@@ -931,7 +932,7 @@ i {
     cursor: pointer;
     position: absolute;
     right: 1rem;
-    top: 0.6875rem;
+    top: 0.4375rem;
   }
 }
 @media (max-width:480px){
