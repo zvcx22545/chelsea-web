@@ -557,7 +557,7 @@ h3 {
 footer {
   margin-top: 3.125rem;
   background-image: url("/img/homeTop-bg.png");
-  background-size: 100%;
+  background-size: cover;
   background-color: #05256f;
   background-repeat: no-repeat;
   vertical-align: middle;
