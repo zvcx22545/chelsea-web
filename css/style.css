@@ -220,16 +220,19 @@ th {
 
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: 95%;
   border-spacing: 0;
 }
+th{
+  border-bottom: #034694 2px solid;
+  padding: 0.938rem;
+}
 
-th,
 td {
   padding: 0.938rem;
   width: 15.625rem;
-  border-left: #034694 1px solid;
-  border-right: #034694 1px solid;
+  /* border-left: #034694 2px solid;
+  border-right: #034694 2px solid; */
   right: 0;
 }
 
@@ -605,7 +608,9 @@ i {
     align-items: center;
     text-align: center;
   }
-
+  .main-contents br{
+    display: none;  
+  }
   .dataReward btn>a {
     font-size: clamp(1rem, 0.9167rem + 0.1736vw, 1.125rem);
     margin: 0 28%;
@@ -683,8 +688,7 @@ i {
     font-size: 1rem;
   }
 
-  .left-contents h1,
-  p {
+  .left-contents h1 {
     margin: 0 auto;
     text-align: center;
     margin-left: 0;
@@ -798,7 +802,15 @@ i {
   #form-steps {
     gap: 1rem;
   }
-
+  .table-compete u{
+    display: none;
+  }
+  .dataReward btn>a {
+    margin: 0 auto;
+    font-size: 16px;
+    padding: 0 10rem;
+  }
+  
   .step {
     width: 50px !important;
     height: 50px !important;
