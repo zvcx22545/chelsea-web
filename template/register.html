@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/signup.css" />
+  <link rel="stylesheet" href="/css/form.css" />
+  <link rel="stylesheet" href="/css/collapsible.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <img src="../img/new-logo.png" class="navbar-logo" alt="โลโก้">
+    <div class="menu">
+        <a href="/index.html">หน้าแรก</a>
+        <a href="#news">ตารางการแข่งขัน</a>
+        <a href="#contact">ผลการแข่งขัน</a>
+        <btn class="navbar-button"><a href="./template/register.html">ลงทะเบียน</a></btn>
+    </div>
+  </div>>
+  <div class="top-main">
+    <img src="" class="bg-top" alt="">
+    <h1>SINGHA WORLD OF FOOTBALL SKILLS CHALLENGE</h1>
+    <p>RULES & REGULATIONS  SINGHA WORLD OF FOOTBALL SKILLS CHALLENGE <br> จัดการแข่งขันโดย บริษัท สิงห์ คอร์เปอเรชั่น จำกัด  ผู้สนับสนุนสโมสรฟุตบอลเชลซีอย่างเป็นทางการ</p>
+    <div class="topbtn"></div>
+    <img style="margin-top: 2rem;" src="/img/alllogo.png" alt="alllogo">
+</div>
+  <div class="content">
+    <div class="innerContents">
+      
+      <h2 class="Title">
+        ลงทะเบียนเพื่อเข้าร่วมโครงการ “SINGHA WORLD OF FOOTBALL SKILLS
+        CHALLENGE”
+      </h2>
+      <p style="
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            font-size: clamp(0.75rem, 0.5795rem + 0.4545vw, 1.125rem);
+            padding: 0rem 1rem;
+          ">
+        จัดการแข่งขันโดย บริษัท สิงห์ คอร์เปอเรชั่น จำกัด
+        ผู้สนับสนุนสโมสรฟุตบอลเชลซีอย่างเป็นทางการ
+      </p>
+      <!-- เส้นขั้นหน้าระหว่างตรงหัวข้อกับลงทะเบียน -->
+      <hr class="linetitle" />
+    </div>
+  </div>
+  <div id="form-steps">
+      <div class="step active" data-step="1">1</div>
+      <div class="step" data-step="2">2</div>
+      <div class="step" data-step="3">3</div>
+      <div class="step" data-step="4">4</div>
+  </div>
+  
+
+  <form id="conditional-form">
+    <div class="form-section" data-step="1">
+      <!-- Form fields for step 1 -->
+      <div class="sport-title">
+        <label for="stadium-select">กรุณาเลือกสนามแข่งขั้น</label>
+        <p style="color: #eb0000; font-size: 1.5rem">*</p>
+      </div>
+      <div class="select-stadium">
+        <select id="stadium-select" name="stadium-select" required class="angle-down">
+          <option value>กรุณาเลือกสนามแข่งขัน</option>
+          <!-- Add more options here -->
+          <option value="stadium1">สนาม Kick Off Arena CMI</option>
+          <option value="stadium2">สนาม Sport Arena</option>
+          <option value="stadium3">สนาม Major Arena</option>
+          <option value="stadium4">สนาม Sriracha Arena</option>
+
+          <!-- ... -->
+        </select>
+      </div>
+      <div class="sport-title">
+        <label for="Teamname">กรุณากรอกชื่อทีม</label>
+        <p style="color: #eb0000; font-size: 1.5rem">*</p>
+      </div>
+      <input type="text" id="Teamname" name="Teamname" required />
+      <div class="sport-title">
+        <label for="Captain">กรอกชื่อ - นามสกุล ผู้สมัคร</label>
+        <p style="color: #eb0000; font-size: 1.5rem">*</p>
+      </div>
+      <input type="text" id="Captain" name="Captain" placeholder="กรุณากรอกชื่อ - นามสกุล" required />
+      <div class="sport-title">
+        <label for="phoneCaptain">เบอร์โทร</label>
+        <p style="color: #eb0000; font-size: 1.5rem">*</p>
+      </div>
+      <input type="tel" id="phoneCaptain" name="phoneCaptain" placeholder="กรุณาเบอร์โทร 10 หลัก" required />
+      <div class="sport-title">
+        <label for="emailCaptian">อีเมล</label>
+        <p style="color: #eb0000; font-size: 1.5rem">*</p>
+      </div>
+      <input type="email" id="emailCaptian" name="emailCaptian" placeholder="กรุณากรอกอีเมล" required />
+      <div class="btn-next">
+        <button class="next" type="button" style="width: 196px" onclick="nextStep(2)">
+          ถัดไป
+        </button>
+      </div>
+    </div>
+    <div id="initialForm">
+      <div class="form-section" data-step="2">
+        <!-- Form fields for step 2 -->
+        <form action enctype="multipart/form-data">
+          <div class="title-header">
+            <div class="Player-title">
+              <label for="name" class="add-player">คนที่1</label>
+              <p style="color: #eb0000; font-size: 1.5rem">*</p>
+            </div>
+          </div>
+          <div class="sport-title">
+            <label for="nameplayer">กรอกชื่อ - นามสกุล</label>
+            <p style="color: #eb0000; font-size: 1.5rem">*</p>
+          </div>
+          <input type="text" id="nameplayer" name="nameplayer" required />
+          <div class="sport-title">
+            <label for="phoneplayer">เบอร์โทร</label>
+            <p style="color: #eb0000; font-size: 1.5rem">*</p>
+          </div>
+          <input type="tel" id="phoneplayer" name="phoneplayer" placeholder="กรุณาเบอร์โทร 10 หลัก" pattern="[0-9]{10}"
+            required />
+          <div class="sport-title">
+            <label for="emailplayer">อีเมล</label>
+            <p style="color: #eb0000; font-size: 1.5rem">*</p>
+          </div>
+          <input type="email" id="emailplayer" name="emailplayer" placeholder="กรุณากรอกอีเมล" required />
+
+          <div class="sport-title">
+            <div class="cardnumber">บัตรประชาชน/หนังสือเดินทาง</div>
+            <p style="color: #eb0000; font-size: 1.5rem">*</p>
+          </div>
+          <div id="image-preview-container-0"></div>
+          <label for="file-upload" class="file-label">
+            <button type="button" class="upload-doc-button" onclick="document.getElementById('file-upload-0').click()">
+              + แนบไฟล์เอกสาร
+            </button>
+          </label>
+          <input type="file" id="file-upload-0" name="file-upload-0" onchange="previewImage(0);" required />
+          <p class="file-upload-info">
+            *Lorem ipsum dolor sit amet consectetur. Nunc sit eleifend dictum
+            quisque tortor velit purus. Enim in gravida tortor sit.
+          </p>
+          <hr />
+
+          <div id="formContainer">
+            <div class="form-section">
+              <form action enctype="multipart/form-data"></form>
+              <form action="" enctype="multipart/form-data"></form>
+              <form action="" enctype="multipart/form-data"></form>
+            </div>
+          </div>
+          <div class="quanlity-player">
+            <button type="button" id="add-player-btn" onclick="addForm()" class="add-player-btn">
+              + เพิ่ม
+            </button>
+            <p class="add-player-info">*เพิ่มได้สูงสุด 4 ท่าน</p>
+          </div>
+          <div class="btn-control">
+            <button type="button" onclick="prevStep(1)">ย้อนกลับ</button>
+            <button type="button" onclick="nextStep(3)">ถัดไป</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="form-section" data-step="3" style="display: none">
+      <!-- Form fields for step 3 -->
+      <div class="field-container">
+        <div class="field-name">สนามแข่งขัน</div>
+        <div class="select-field">ชื่อสนามที่เลือก xxxxxxxxx</div>
+        <div class="field-name">ชื่อทีม</div>
+        <div class="select-field">ชื่อทีม xxxxxxxxxxxxxxxxxxxxxxxxx</div>
+      </div>
+      <div class="data-player">
+        <div class="collapsible">
+          <input type="checkbox" id="collapsible-head" />
+          <label for="collapsible-head" class="field-player">เช็คข้อมูลผู้สมัคร</label>
+          <div class="all-player-data">
+            <hr class="hidden-hr" />
+            <form action>
+            <form action="">
+            <form action="">
+              <div class="title-header">
+                <div class="Player-title">
+                  <label for="name" class="add-player">ผู้สมัครคนที่ 1
+                  </label>
+                  <p style="color: #eb0000; font-size: 1.5rem">*</p>
+                </div>
+              </div>
+              <div class="sport-title">
+                <label for="nameplayer-1">กรอกชื่อ - นามสกุล</label>
+                <p style="color: #eb0000; font-size: 1.5rem">*</p>
+              </div>
+              <input type="text" id="nameplayer-1" name="nameplayer" required />
+              <div class="sport-title">
+                <label for="phoneplayer-1">เบอร์โทร</label>
+                <p style="color: #eb0000; font-size: 1.5rem">*</p>
+              </div>
+              <input type="tel" id="phoneplayer-1" name="phoneplayer" placeholder="กรุณาเบอร์โทร 10 หลัก"
+                pattern="[0-9]{10}" required />
+              <div class="sport-title">
+                <label for="emailplayer-1">อีเมล</label>
+                <p style="color: #eb0000; font-size: 1.5rem">*</p>
+              </div>
+              <input type="email" id="emailplayer-1" name="emailplayer" placeholder="กรุณากรอกอีเมล" required />
+              <button class="confirm-player" type="submit">
+                ยืนยันข้อมูล
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="btn-control">
+        <button type="button" onclick="prevStep(2)">ย้อนกลับ</button>
+        <button type="button" onclick="nextStep(4)">ถัดไป</button>
+      </div>
+    </div>
+    <div class="form-section" data-step="4" style="display: none">
+      <!-- Form fields for step 4 -->
+      <div class="thank-campagin">
+        <h1 class="thank-activitie">
+          ขอบคุณที่ลงทะเบียนเข้าร่วมกิจกรรมค่ะ/ครับ
+        </h1>
+        <p style="
+              margin-bottom: 2rem;
+              margin-top: 2rem;
+              font-size: clamp(0.75rem, 0.5795rem + 0.4545vw, 1.125rem);
+              padding: 0rem 1rem;
+            ">
+          จัดการแข่งขันโดย บริษัท สิงห์ คอร์เปอเรชั่น จำกัด
+          ผู้สนับสนุนสโมสรฟุตบอลเชลซีอย่างเป็นทางการ
+        </p>
+      </div>
+      <div class="confirm-btn">
+        <button type="button" onclick="prevStep(3)">Previous</button>
+        <button type="submit" class="sign-up">
+          บันทุกข้อมูลการลงทะเบียน
+        </button>
+      </div>
+    </div>
+  </form>
+  <script src="https://kit.fontawesome.com/32a2f35189.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/add-form.js"></script>
+</body>
+
+</html>
