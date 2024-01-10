@@ -62,7 +62,7 @@
 .left-contents a {
   display: flex;
   justify-content: center;
-  width: cover;
+  width: auto;
   padding: 1rem;
 }
 
@@ -709,7 +709,16 @@ i {
     align-items: center;
     margin: 0 auto;
   }
+  .left-contents a {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 0 auto;
+    width: 50%;
+  }
+  .left-contents btn{
 
+    padding: 0 10rem;
+  }
   .imagLeft {
     display: none;
   }
