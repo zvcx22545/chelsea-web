@@ -526,16 +526,6 @@ i {
   margin-top: 4rem;
   text-align: center;
 }
-
-.Title-banner
-{
-  font-size: clamp(1.25rem, 1.0769rem + 0.7692vw, 2rem);
-}
-
-.paragraph-title
-{
-  font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
-}
 /* CSS Media Queries สำหรับแท็บเล็ต 768 */ 
 @media screen and (max-width: 1366px) { 
   .rewardData {
@@ -629,11 +619,13 @@ i {
     margin-right: -1rem;
   }
 }
+
 @media screen and (max-width: 768px) {
   .navbar{
     padding: 0 2rem;
   }
 }
+
 @media (max-width: 1500px) {
   #form-steps {
     gap: 7rem;
@@ -655,6 +647,7 @@ i {
     height: 75px !important;
   }
 }
+
 @media (max-width: 1200px) {
   #form-steps {
     gap: 6rem;
@@ -725,7 +718,6 @@ i {
   {
     flex-direction: column;
   }
-
 }
 /* Hamburger menu css */
 
