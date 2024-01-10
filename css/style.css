@@ -529,7 +529,7 @@ i {
 /* CSS Media Queries สำหรับแท็บเล็ต 768 */ 
 @media screen and (max-width: 1366px) { 
   .rewardData {
-    flex-direction: column;
+    margin: 0 auto;
     align-items: center;
     text-align: center;
   }
@@ -548,7 +548,9 @@ i {
     width: 100%;
     text-align: center;
     margin-bottom: 2rem;
-    margin-left: 5.5rem;
+    /* margin-left: 5.5rem; */
+    padding: 1rem 0;
+    margin: 0 auto;
     margin-right: 0;
     justify-content: center;
   }
@@ -562,7 +564,8 @@ i {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-left: 10rem;
+    margin-top: 2rem;
+    /* margin-left: 10rem; */
   }
   .image-right{
     display: none;
@@ -575,6 +578,7 @@ i {
   }
   .navbar{
     justify-content: center;
+    padding: 1rem;
   }
   .navbar-logo{
     display: none;
@@ -799,8 +803,6 @@ i {
     top: 0.6875rem;
   }
 }
-
-
 
 .bar1, .bar2, .bar3 {
   width: 35px;
