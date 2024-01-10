@@ -162,7 +162,7 @@
   padding: 1.25rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 70%;
+  max-width: 98%;
   height: 100%;
   margin: auto;
   margin-bottom: 2rem;
@@ -382,7 +382,7 @@ td {
 
 /* Style the label */
 label {
-  font-weight: bold;
+  font-weight: 400;
   margin-right: 0.625rem;
 }
 
@@ -867,6 +867,9 @@ i {
 /* Hamburger menu css */
 
 
+.menu-toggle-checkbox {
+  display: none;
+}
 
 
 .menu a:hover {
@@ -888,6 +891,11 @@ i {
   .table-compete u{
     display: none;
   }
+
+  #menuToggle:checked ~ .menu {
+    display: block; /* Or your desired display style */
+    /* Add other styles for active state */
+  }
   .menu {
     display: none;
   }
@@ -903,6 +911,7 @@ i {
     flex-direction: column;
   }
  
+  
 
   .menu-active {
     display: block;
