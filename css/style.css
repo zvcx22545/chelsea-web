@@ -3,6 +3,10 @@
   font-family: interIm;
   src: url(../font/Inter-VariableFont_slnt\,wght.ttf);
 }
+:root
+{
+  --primary-color:#033161;
+}
 *{
   margin: 0;
   padding: 0;
@@ -522,6 +526,16 @@ i {
   margin-top: 4rem;
   text-align: center;
 }
+
+.Title-banner
+{
+  font-size: clamp(1.25rem, 1.0769rem + 0.7692vw, 2rem);
+}
+
+.paragraph-title
+{
+  font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+}
 /* CSS Media Queries สำหรับแท็บเล็ต 768 */ 
 @media screen and (max-width: 1366px) { 
   .rewardData {
@@ -712,4 +726,105 @@ i {
     flex-direction: column;
   }
 
+}
+/* Hamburger menu css */
+
+.menu-active
+{
+  display: block !important;
+}
+.menu-active
+{
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+}
+.menu a
+{
+  width: 100%;
+  margin: 1rem 0;
+}
+.menu a:hover
+{
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius:0.3125rem;
+  color: var(--primary-color);
+}
+
+@media (min-width:650px)
+{
+  .hamburger-menu{
+    display: none;
+  }
+}
+
+@media (max-width:650px)
+{
+  .menu
+  {
+    display: none;
+  } 
+  .navbar
+  {
+    height:auto;
+    position: relative;
+    flex-direction: column;
+  } 
+
+  .navbar .navbar-logo
+  {
+    display: block;
+    width: auto;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 0 auto;
+  }
+  .navbar-button
+  {
+    margin: 1rem 0;
+  }
+  .navbar-button a
+  {
+    background: none;
+    color: #fff;
+  }
+  .navbar-button a:hover
+  {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius:0.3125rem;
+    color: var(--primary-color);
+  }
+  .hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 0.6875rem;
+  }
+}
+
+
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 { 
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
