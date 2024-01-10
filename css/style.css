@@ -818,8 +818,8 @@ i {
     margin: 0 auto;
     width: 50%;
   }
-  .table-compete u{
-    display: none;
+  .taberdata{
+    margin: 1rem;
   }
   .dataReward{
     align-items: center;
@@ -856,7 +856,7 @@ i {
   .confirm-btn {
     flex-direction: column;
   }
-
+  
   
 }
 
@@ -887,6 +887,9 @@ i {
 }
 
 @media (max-width:650px) {
+  .table-compete u{
+    display: none;
+  }
   .menu {
     display: none;
   }
@@ -986,13 +989,17 @@ i {
   transform: translate(0, -11px) rotate(45deg);
 }
 @media (max-width: 768px) {
-  .taberdata {
+  .taberdata .col1{
     overflow-x: auto !important;
   }
   table {
     width: auto;
   }
-  th, td {
+  /* th, td {
+    white-space: nowrap;
+  } */
+  
+  .col1{
     white-space: nowrap;
   }
 }
