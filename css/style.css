@@ -62,7 +62,7 @@
 .left-contents a {
   display: flex;
   justify-content: center;
-  width: cover;
+  width: auto;
   padding: 1rem;
 }
 
@@ -532,6 +532,7 @@ h3 {
 .bottom-main img {
   width: 80%;
   margin-bottom: 2rem;
+  border-radius: 10px;
 }
 
 .Result-compate button {
@@ -556,7 +557,7 @@ h3 {
 footer {
   margin-top: 3.125rem;
   background-image: url("/img/homeTop-bg.png");
-  background-size: 100%;
+  background-size: cover;
   background-color: #05256f;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -709,7 +710,16 @@ i {
     align-items: center;
     margin: 0 auto;
   }
+  .left-contents a {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin: 0 auto;
+    width: 50%;
+  }
+  .left-contents btn{
 
+    padding: 0 10rem;
+  }
   .imagLeft {
     display: none;
   }
