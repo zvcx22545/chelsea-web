@@ -968,3 +968,14 @@ i {
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+@media (max-width: 768px) {
+  .taberdata {
+    overflow-x: auto !important;
+  }
+  table {
+    width: auto;
+  }
+  th, td {
+    white-space: nowrap;
+  }
+}
