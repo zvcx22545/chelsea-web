@@ -1,8 +1,6 @@
 /* Reset margin and padding for all elements */
-@font-face {
-  font-family: interIm;
-  src: url(../font/Inter-VariableFont_slnt\,wght.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+
 
 :root {
   --primary-color: #033161;
@@ -12,7 +10,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: interIm;
+  /* font-family: interIm; */
+  font-family: 'Noto Sans Thai', sans-serif;
 }
 
 #news,
@@ -247,7 +246,6 @@ td {
 
 .Title {
   color: #000;
-  font-family: Inter;
   font-size: clamp(1rem, 0.5455rem + 1.2121vw, 2rem);
   font-weight: 600;
   line-height: normal;
