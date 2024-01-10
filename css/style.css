@@ -846,10 +846,7 @@ i {
     flex-direction: column;
   }
 
-  btn>a {
-    width: 50%;
-    margin: 0 auto;
-  }
+  
 }
 
 @media (max-width: 550px) {
@@ -941,6 +938,14 @@ i {
   .Result-compate .setting{
     margin: 0 auto;
     width: 75%;
+  }
+}
+@media (max-width:700px){
+  .dataReward btn>a {
+    margin: 0 auto;
+    font-size: 0.875rem;
+    text-align: center;
+    width: auto;
   }
 }
 
