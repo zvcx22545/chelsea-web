@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const scheduleHeader = document.getElementById("news");
-  const resultsHeader = document.getElementById("contact");
   const scheduleLink = document.querySelector(".menu a[href='#news']");
-  const resultsLink = document.querySelector(".menu a[href='#contact']");
 
   let isScheduleClicked = false;
   let isResultsClicked = false;
