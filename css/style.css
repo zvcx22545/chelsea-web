@@ -143,6 +143,8 @@
   justify-content: center;
   margin-bottom: 1.25rem;
   gap: 10rem;
+  max-width: 47%;
+  margin: 0 auto;
 }
 
 .step {
@@ -158,7 +160,6 @@
 }
 
 .form-section {
-  /* margin-bottom: 20px; */
   background-color: #fff;
   padding: 1.25rem;
   border-radius: 0.5rem;
@@ -167,7 +168,24 @@
   height: 100%;
   margin: auto;
   margin-bottom: 2rem;
+  animation: animate 0.5s;
+  display: none; /* Initially hidden */
 }
+
+@keyframes animate {
+  from {
+    transform: scale(1,0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1,1);
+    opacity: 1;
+  }
+}
+.form-active {
+  display: block;
+}
+
 
 .main-contents {
   margin-bottom: 1.25rem;
@@ -178,6 +196,9 @@
 {
   font-size: clamp(0.75rem, 0.6635rem + 0.3846vw, 1.125rem);
 }
+
+
+
 
 btn>a {
   color: white;
@@ -766,6 +787,14 @@ i {
   }
 }
 
+@media (min-width:1440px)
+{
+  .form-section
+  {
+    max-width: 80% !important;
+  }
+}
+
 @media (max-width: 1200px) {
   #form-steps {
     gap: 6rem;
@@ -792,6 +821,7 @@ i {
 @media (max-width: 840px) {
   #form-steps {
     gap: 2rem;
+    max-width: 36%;
   }
 
   .step {
@@ -863,6 +893,10 @@ i {
   .quanlity-player {
     flex-direction: column;
   }
+  #form-steps {
+    max-width: 50%;
+  }
+  
 }
 
 /* Hamburger menu css */
@@ -1042,7 +1076,7 @@ i {
 
   .foot-content
   {
-    text-align: center;
+    display: none;    
   }
 
   .footright
@@ -1060,6 +1094,7 @@ i {
   .container-contact
   {
     margin-top: 1rem;
+    
   }
   
   .footBottom
@@ -1085,7 +1120,6 @@ i {
 .contact-social
 {
   display: flex;
-  gap: 1rem;
 }
 
 .contact-social a

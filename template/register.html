@@ -53,6 +53,7 @@
     </div>
   </div>
   <div id="form-steps">
+    <div class="progress" id="progress"></div>
       <div class="step active" data-step="1" >1</div>
       <div class="step" data-step="2">2</div>
       <div class="step" data-step="3">3</div>
@@ -61,7 +62,7 @@
   
 
   <form id="conditional-form">
-    <div class="form-section" data-step="1">
+    <div class="form-section form-active" data-step="1">
       <!-- Form fields for step 1 -->
       <div class="sport-title">
         <label for="stadium-select">กรุณาเลือกสนามแข่งขั้น</label>
@@ -105,7 +106,6 @@
         </button>
       </div>
     </div>
-    <div id="initialForm">
       <div class="form-section" data-step="2">
         <!-- Form fields for step 2 -->
         <form action enctype="multipart/form-data">
@@ -150,11 +150,6 @@
           <hr />
 
           <div id="formContainer">
-            <div class="form-section">
-              <form action enctype="multipart/form-data"></form>
-              <form action="" enctype="multipart/form-data"></form>
-              <form action="" enctype="multipart/form-data"></form>
-            </div>
           </div>
           <div class="quanlity-player">
             <button type="button" id="add-player-btn" onclick="addForm()" class="add-player-btn">
@@ -168,9 +163,8 @@
           </div>
         </form>
       </div>
-    </div>
 
-    <div class="form-section" data-step="3" style="display: none">
+    <div class="form-section " data-step="3">
       <!-- Form fields for step 3 -->
       <div class="field-container">
         <div class="field-name">สนามแข่งขัน</div>
@@ -222,7 +216,7 @@
         <button type="button" onclick="nextStep(4)">ถัดไป</button>
       </div>
     </div>
-    <div class="form-section" data-step="4" style="display: none">
+    <div class="form-section" data-step="4">
       <!-- Form fields for step 4 -->
       <div class="thank-campagin">
         <h1 class="thank-activitie">
