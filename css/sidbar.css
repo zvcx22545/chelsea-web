@@ -10,7 +10,7 @@
     bottom: 0;
     left: 0;
     background-color: white;
-    width: 250px; 
+    width: 300px; 
     height: 100%;
     text-align: center;
     padding: 0 1.7rem;
@@ -42,11 +42,7 @@ button{
     border: none; 
     cursor: pointer;
 }
-button:hover{
-    background-color: #0C3695;
-    color: white;
-    border-radius: 5px;
-}
+
 button>a{
     text-decoration: none;
     color: inherit;
@@ -66,18 +62,19 @@ button>a{
 }
 nav {
     color: white;
+    padding: 10px;
     padding-left: 20px;
     padding-right: 10px;
     justify-content: space-between;
     display: flex;
     height: 55px;
-    margin-top: -10px;
+    /* margin-top: 10px; */
     vertical-align: middle;
     background-color:  #0C3695;
 }
 /* ส่วนขวา */
 .right {
-    width: calc(100% - 304px); /* แบ่งเป็นสองส่วนเท่าๆ กัน */
+    width: calc(100% - 300px); /* แบ่งเป็นสองส่วนเท่าๆ กัน */
     height: 100%;
     position: fixed;
     bottom: 0;
@@ -144,3 +141,4 @@ i{
   .search-icon:hover{
     width: 300px;
   }
+ 

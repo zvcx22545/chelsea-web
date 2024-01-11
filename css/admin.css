@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: interIm; */
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+  
+  .admin-data{
+    margin: 1rem;
+  }
+.col1{
+    width: 45px;
+}
+.col2{
+    width: 215px;
+}
+table,
+td,
+th {
+    border-bottom: 1px #B3B7BA solid;
+    border-top: 1px #B3B7BA solid;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 0.938rem;
+    height: 50px;
+    right: 0;
+}
+th{
+    background-color: #B3B7BA;
+    color: #7E8695;
+}
+
+.tableMember {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.listMenu{
+    display: flex;
+    gap: 20px;
+}
+.listMenu button{
+    border-radius: 6px;
+    border: 1px #034694 solid;
+    width: 150px;
+    height: 40px;
+    color: #034694;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.top-data{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.listMenu{
+    display: flex;
+    align-items: center;
+}
+.list-menu-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.list-menu-right a{
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    color: black;
+}
+.list-menu-right btn{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    align-items: center;
+    padding: 0;
+    height: 40px;
+    color: #034694;
+    border: 1px #034694 solid;
+}
+
+.active {
+    background-color: #034694;
+    border-radius: 6px;
+    color: #fff;
+}
+.page2{
+    margin-top: -1.25rem;
+}
+/* ซ่อนทั้งหมดเมื่อโหลดหน้าเว็บ */
+#resultsTable {
+    display: none;
+}
+
