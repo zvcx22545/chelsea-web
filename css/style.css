@@ -119,7 +119,8 @@
 
 .bg-top {
   width: 100%;
-  margin-top: 8.5rem;
+  text-align: center;
+  margin-top: 7.5rem;
 }
 
 /* .homeTop-bg{
@@ -281,11 +282,14 @@ td {
 .Hreward {
   display: flex;
   color: white;
-  background-color: #050e4f;
+  background-image: url('/img/homeTop-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #050E4F;
   height: auto;
   width: 100%;
   justify-content: space-between;
-  padding: 2rem;
+  padding-left:  2rem;
 }
 
 .rewardData {
@@ -317,7 +321,7 @@ td {
   display: flex;
   margin-bottom: 3rem;
   padding-right: 1.25rem;
-  margin-left: 5rem;
+  margin-left: 10rem;
   text-align: left;
 }
 
@@ -325,7 +329,7 @@ td {
   display: flex;
   margin-bottom: 3rem;
   padding-right: 1.25rem;
-  margin-left: 10rem;
+  margin-left: 20rem;
   text-align: left;
 }
 
@@ -333,13 +337,14 @@ td {
   display: flex;
   margin-bottom: 3rem;
   padding-right: 1.25rem;
-  margin-left: 15rem;
+  margin-left: 30rem;
   text-align: left;
 }
 
 .imagRigt {
   background-image: url("/img/rightimageData.png");
   background-repeat: no-repeat;
+  background-position: top;
   background-size: 100%;
   position: center;
   height: 42.25rem;
@@ -508,30 +513,12 @@ li {
 }
 
 /* top main */
-.top-main {
-  background-image: url("/img/bg.bottom.png");
-  background-repeat: no-repeat;
-  background-color: #050e4f;
-  background-size: 100%;
-  height: 656px;
-  text-align: center;
-  padding: 2rem;
-  padding-left: 15rem;
-  padding-right: 15rem;
-  color: white;
-}
 
 button>a {
   text-decoration: none;
 }
 
-.top-main h1 {
-  margin-bottom: 1rem;
-}
 
-.top-main .topbtn {
-  margin-top: 5rem;
-}
 
 .bottom-main {
   margin-left: 2rem;
@@ -920,13 +907,17 @@ i {
   .hamburger-menu{
     display: none;
   }
+  
 }
 
 @media (max-width:650px) {
   .table-compete u{
     display: none;
   }
-
+  .bg-top {
+    width: 100%;
+    margin-top: 0;
+  }
   #menuToggle:checked ~ .menu {
     display: block; /* Or your desired display style */
     /* Add other styles for active state */

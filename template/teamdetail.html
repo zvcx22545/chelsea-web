@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/sidbar.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></head>
     <title>Document</title>
 </head>
@@ -15,24 +16,60 @@
                 <div class="main">
                     <br>
                     <ul class="menu">
-                        <button><a href="teamdetail.html"><p><i class="bi bi-people"></i>ข้อมูลรายชื่อทีม</p></a></button>
+                        <button id="teamButton" onclick="changePage('team')"><a href="teamdetail.html"><i class="bi bi-people"></i>ข้อมูลรายชื่อทีม</a></button>
                     </ul>
                     <ul class="menu">
-                        <button><a href="compete.html"><p><i class="bi bi-boxes"></i>การแข่งขัน</p></a></button>
+                        <button id="competitionButton" onclick="changePage('team')"><a href="compete.html"><i class="bi bi-boxes"></i>การแข่งขัน</a></button>
+                    </ul>
+                    <ul class="menu">
                     </ul>
                     <button class="logout"> <a href="./CS-admin.html"><p><i class="bi bi-arrow-bar-right"></i>Log out</p></a></button>
             </div>
         </div>
         <div class="right">
             <!-- ส่วนทางขวา -->
-            <nav> <h1>ข้อมูลทีม</h1><h1><i class="bi bi-bell-fill" style="color:#fff;cursor: pointer;"></i></h1></nav>
-             <div style="margin-top: 1.5rem;"></div>
+            <nav> <h1 id="pageTitle"></h1><h1><i class="bi bi-bell-fill" style="color:#fff;cursor: pointer;"></i></h1></nav>
+             
+            <div class="admin-data">
+            <div class="top-data">
+                <div class="listMenu">
+                    <h4>ทั้งหมด : </h4>
+                </div>
+                <div class="list-menu-right">
+                    <a href="">ดาวน์โหลด Excel</a>
+                    <btn>ค้นหา</btn>
+                </div>
+         </div>
+             <div class="tableMember">
+                <table>
+                    <tr>
+                      <th class="col0">No.</th>
+                      <th class="col1">ชื่อทีม</th>
+                      <th class="col2">สนามการแข่งขัน</th>
+                      <th>การชำระเงิน</th>
+                      <th>จำนวนผู้สมัคร</th>
+                      <th>รายละเอียด</th>
+                      <th class="col2">สถานะ</th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    
+                  </table>
+             </div>
         </div>
-            
+    </div>
 
 
     </div>
 </body>
 <script src="/js/protect.js"></script>
+<script src="/js/admin-page.js"></script>
 
 </html>
