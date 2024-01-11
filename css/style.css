@@ -584,12 +584,8 @@ footer {
 
 .footleft {
   display: flex;
-  width: 50%;
-  text-align: left;
-}
-
-.footleft p {
-  text-align: left;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .footright {
@@ -607,7 +603,7 @@ i {
 }
 
 .footBottom {
-  margin-top: 4rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
@@ -1039,7 +1035,8 @@ i {
 
 .logo-footer
 {
-  display: none;
+  display: flex;
+  margin: 0 auto 2rem ;
 }
 
 @media (max-width:800px)
@@ -1117,4 +1114,9 @@ i {
 {
   text-decoration: none;
   color: #fff;
+}
+
+.hr
+{
+  margin: 2rem;
 }
