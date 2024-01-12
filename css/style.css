@@ -10,7 +10,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: interIm; */
   font-family: 'Noto Sans Thai', sans-serif;
 }
 
@@ -225,46 +224,79 @@ btn>a {
   border-radius: 0.313rem;
   padding: 0.313rem;
 }
+/* --------------------------------------------- */
 
-table,
-td,
-th {
-  /* border: 2px solid #ddd; */
-  text-align: center;
-}
-
-.taberdata {
+.tabledata{
   display: flex;
   justify-content: center;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
-
-table {
+.data{
+  width: 90%;
+  /* height: 405px; */
+  padding-bottom: 10px;
+  overflow-y: hidden;
+  margin: 2rem 0;
+}
+ table{
+  margin: 0 auto;
+  width: 600px;
+  text-align: left;
+  overflow: scroll;
   border-collapse: collapse;
-  width: 95%;
-  border-spacing: 0;
+  border: 1px rgb(218, 217, 211) solid;
+}
+thead{
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(218, 217, 211);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 th{
-  border-bottom: #034694 2px solid;
-  padding: 0.938rem;
+  width: 200px;
+  height: 50px;
+}
+td{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+} 
+tbody td:nth-child(1),td:nth-child(2){
+  border-right: 1px rgb(218, 217, 211) solid;
+}
+th:nth-child(1){
+  width: 200px;
+  height: 50px;
+  background-color: rgb(218, 217, 211);
+  position: absolute;
+  z-index: 2;
+  padding: 10px;
+} 
+td:nth-child(1){
+  width: 200px;
+  position: fixed;
+  background-color: white;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 1;
+  padding: 10px;
+}
+td:nth-child(2){
+  width: 200px;
 }
 
-td {
-  padding: 0.938rem;
-  width: 15.625rem;
-  /* border-left: #034694 2px solid;
-  border-right: #034694 2px solid; */
-  right: 0;
+.main-data{
+  /* margin: 2rem 0; */
+  overflow-y: hidden;
 }
-
+/* ---------------------------------------------- */
 .Winnner {
   background-color: #05256F;
   color: #fff;
   height: 2.5rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  margin: 2rem 15rem;
   border-radius: 5px;
+
 }
 
 .Title {
@@ -681,9 +713,6 @@ i {
     display: none;
   }
 
-  td {
-    font-size: 1rem;
-  }
 
   .Dataright {
     margin: 0 auto;
@@ -742,10 +771,6 @@ i {
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 0 2rem;
-  }
-  td
-  {
-    width: 15rem; 
   }
 }
 
@@ -837,6 +862,7 @@ i {
   }
   .taberdata{
     margin: 1rem;
+    margin: 0 auto;
   }
   .dataReward{
     align-items: center;
@@ -848,10 +874,7 @@ i {
     text-align: center;
     width: auto;
   }
-  th,
-  td{
-    font-size: 0.8rem;
-  }
+  
   .step {
     width: 50px !important;
     height: 50px !important;
@@ -902,6 +925,14 @@ i {
   color: var(--primary-color);
   transition: all 0.3s;
 }
+@media (max-width:680px){
+  th:nth-child(1){
+    box-shadow: .2rem 0 2px 0 #ccc; /* เงา */
+  } 
+  td:nth-child(1){
+    box-shadow: .2rem 0 2px 0 #ccc;
+  }
+}
 
 @media (min-width:650px)
 {
@@ -938,8 +969,6 @@ i {
     flex-direction: column;
   }
  
-  
-
   .menu-active {
     display: block;
   }
@@ -987,6 +1016,9 @@ i {
     right: 1rem;
     top: 0.4375rem;
   }
+
+  /* ------------------------------- */
+  
 }
 @media (max-width:480px){
   .Result-compate .setting{
@@ -1032,13 +1064,7 @@ i {
   .taberdata .col1{
     overflow-x: auto !important;
   }
-  table {
-    width: auto;
-  }
-  /* th, td {
-    white-space: nowrap;
-  } */
-  
+
   .col1{
     white-space: nowrap;
   }

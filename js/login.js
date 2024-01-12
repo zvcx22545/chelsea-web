@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       if (username === correctUsername && password === correctPassword) {
         // If credentials are correct, set the session and redirect
         sessionStorage.setItem('loggedIn', true);
-        window.location.href = 'teamdetail.html'; // Redirect to the team details page
+        window.location.href = './template/teamdetail.html'; // Redirect to the team details page
       } else {
         // If credentials are incorrect, alert the user
         alert('Incorrect username or password!');

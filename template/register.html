@@ -110,7 +110,7 @@
           *
         </p>
       </div>
-      <input type="tel" id="phoneCaptain" name="phoneCaptain" placeholder="กรุณาเบอร์โทร 10 หลัก" required />
+      <input type="tel" id="phoneCaptain" name="phoneCaptain" pattern="\d{10}" maxlength="10" placeholder="กรุณาเบอร์โทร 10 หลัก" required />
       <div class="sport-title">
         <label for="emailCaptian">อีเมล</label>
         <p style="
@@ -122,7 +122,7 @@
       </div>
       <input type="email" id="emailCaptian" name="emailCaptian" placeholder="กรุณากรอกอีเมล" required />
       <div class="btn-next">
-        <button class="next" type="button" style="width: 196px" onclick="nextStep(2)">
+        <button class="next" type="submit" style="width: 196px"  id="load2" > <!-- onclick="nextStep(2)" -->
           ถัดไป
         </button>
       </div>
@@ -196,19 +196,20 @@
         </p>
         <hr />
 
-        <div id="formContainer"></div>
-        <div class="quanlity-player">
-          <button type="button" id="add-player-btn" onclick="addForm()" class="add-player-btn">
-            + เพิ่ม
-          </button>
-          <p class="add-player-info">*เพิ่มได้สูงสุด 4 ท่าน</p>
-        </div>
-        <div class="btn-control">
-          <button type="button" onclick="prevStep(1)">ย้อนกลับ</button>
-          <button type="button" onclick="nextStep(3)">ถัดไป</button>
-        </div>
-      </form>
-    </div>
+          <div id="formContainer">
+          </div>
+          <div class="quanlity-player">
+            <button type="button" id="add-player-btn" onclick="addForm()" class="add-player-btn">
+              + เพิ่ม
+            </button>
+            <p class="add-player-info">*เพิ่มได้สูงสุด 4 ท่าน</p>
+          </div>
+          <div class="btn-control">
+            <button style="background-color: #eb0000;" type="button" onclick="prevStep(1)">ย้อนกลับ</button>
+            <button type="button" onclick="nextStep(3)">ถัดไป</button>
+          </div>
+        </form>
+      </div>
 
     <div class="form-section" data-step="3">
       <!-- Form fields for step 3 -->
@@ -273,9 +274,10 @@
                 </div>
                 <p class="nameplayer">example@gmail.com</p>
               </div>
+              <input type="email" id="emailplayer-1" name="emailplayer" placeholder="กรุณากรอกอีเมล" required />
               <button class="confirm-player" type="submit">
                 ยืนยันข้อมูล
-              </button>
+              </button> -->
             </form>
             <hr style="margin-top: 3rem" />
           </div>
@@ -337,8 +339,8 @@
       </div>
 
       <div class="btn-control">
-        <button type="button" onclick="prevStep(2)">ย้อนกลับ</button>
-        <button type="button" onclick="nextStep(4)">ถัดไป</button>
+        <button style="background-color: #eb0000;" type="button" onclick="prevStep(2)">ย้อนกลับ</button>
+        <button type="button" onclick="nextStep(4)">ยืนยันข้อมูล</button>
       </div>
     </div>
 
@@ -359,7 +361,7 @@
         </p>
       </div>
       <div class="confirm-btn">
-        <button type="button" onclick="prevStep(3)">Previous</button>
+        <button style="background-color: #eb0000;" type="button" onclick="prevStep(3)">Previous</button>
         <button type="submit" class="sign-up">
           บันทุกข้อมูลการลงทะเบียน
         </button>
@@ -390,12 +392,11 @@
       </div>
     </div>
   </footer>
+  <script src="https://kit.fontawesome.com/32a2f35189.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/add-form.js"></script>
+  <script src="/js/responsive.js"></script>
 </body>
-<script src="https://kit.fontawesome.com/32a2f35189.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="/js/script.js"></script>
-<script src="/js/add-form.js"></script>
-<script src="/js/responsive.js"></script>
-
 </html>
