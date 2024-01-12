@@ -90,14 +90,14 @@
         <label for="phoneCaptain">เบอร์โทร</label>
         <p style="color: #eb0000; font-size: 1.5rem">*</p>
       </div>
-      <input type="tel" id="phoneCaptain" name="phoneCaptain" placeholder="กรุณาเบอร์โทร 10 หลัก" required />
+      <input type="tel" id="phoneCaptain" name="phoneCaptain" pattern="\d{10}" maxlength="10" placeholder="กรุณาเบอร์โทร 10 หลัก" required />
       <div class="sport-title">
         <label for="emailCaptian">อีเมล</label>
         <p style="color: #eb0000; font-size: 1.5rem">*</p>
       </div>
       <input type="email" id="emailCaptian" name="emailCaptian" placeholder="กรุณากรอกอีเมล" required />
       <div class="btn-next">
-        <button class="next" type="button" style="width: 196px" onclick="nextStep(2)">
+        <button class="next" type="submit" style="width: 196px"  id="load2" > <!-- onclick="nextStep(2)" -->
           ถัดไป
         </button>
       </div>
@@ -200,16 +200,16 @@
                 <p style="color: #eb0000; font-size: 1.5rem">*</p>
               </div>
               <input type="email" id="emailplayer-1" name="emailplayer" placeholder="กรุณากรอกอีเมล" required />
-              <button class="confirm-player" type="submit">
+              <!-- <button class="confirm-player" type="submit">
                 ยืนยันข้อมูล
-              </button>
+              </button> -->
             </form>
           </div>
         </div>
       </div>
       <div class="btn-control">
-        <button type="button" onclick="prevStep(2)">ย้อนกลับ</button>
-        <button type="button" onclick="nextStep(4)">ถัดไป</button>
+        <button style="background-color: #eb0000;" type="button" onclick="prevStep(2)">ย้อนกลับ</button>
+        <button type="button" onclick="nextStep(4)">ยืนยันข้อมูล</button>
       </div>
     </div>
     <div class="form-section" data-step="4">
@@ -259,5 +259,6 @@
   <script src="/js/script.js"></script>
   <script src="/js/add-form.js"></script>
   <script src="/js/responsive.js"></script>
+  <script src="/js/detect.js"></script>
 </body>
 </html>
