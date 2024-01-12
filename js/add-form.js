@@ -106,3 +106,20 @@ function removeForm(formNumber) {
       formCount--;
   }
 }
+
+// img preview for playment
+function previewImages() {
+  var preview = document.getElementById('image-preview');
+  var file    = document.getElementById('upload-payment').files[0];
+  var reader  = new FileReader();
+
+  reader.onloadend = function () {
+    preview.innerHTML = '<img src="' + reader.result + '" alt="Image preview" />';
+  }
+
+  if (file) {
+    reader.readAsDataURL(file); // reads the data as a URL
+  } else {
+    preview.innerHTML = "";
+  }
+}

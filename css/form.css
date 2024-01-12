@@ -1,3 +1,6 @@
+:root {
+  --font-color-primary: #fff;
+}
 .upload-doc-button {
   width: 100%;
   background: none;
@@ -22,14 +25,17 @@
   line-height: normal;
   height: 3rem;
 }
+
 .file-label {
   margin: 0;
   width: 100%;
   margin-bottom: 1rem;
 }
+
 .add-player-btn {
   margin-top: 1.5rem;
 }
+
 .quanlity-player {
   display: flex;
   gap: 1rem;
@@ -53,9 +59,11 @@
   font-weight: 600;
   line-height: normal;
 }
+
 .add-player-btn:hover {
   color: white;
 }
+
 .add-player-info {
   color: #4f4f4f;
   font-family: Inter;
@@ -76,9 +84,11 @@
   align-items: center;
   border-radius: 8px;
 }
+
 .file-upload-info {
   margin-bottom: 1rem;
 }
+
 .btn-control > button {
   max-width: 196px;
   font-size: clamp(0.75rem, 0.6842rem + 0.2632vw, 1rem);
@@ -136,3 +146,196 @@
   gap: 12px;
 }
 
+#image-preview img {
+  width: 50%;
+  /* Adjust as necessary */
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#image-preview {
+  margin: 2.5rem 0;
+  width: 60%;
+}
+
+.container-btn {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  justify-content: center;
+}
+
+/* hr in dataStep=3 */
+.cf {
+  width: 100%;
+}
+
+.container-btn {
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.container-playment {
+  display: flex;
+  gap: 6.875rem;
+}
+
+.bank-account {
+  color: #000;
+  font-family: Inter;
+  font-size: clamp(0.75rem, 0.6346rem + 0.5128vw, 1.25rem);
+  font-weight: 700;
+  line-height: 24px;
+  padding: 10px 0;
+  /* 120% */
+}
+
+.order-playment {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-family: Inter;
+  font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.amount-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.all-amount {
+  color: #000;
+  font-family: Inter;
+  font-size: clamp(1rem, 0.8846rem + 0.5128vw, 1.5rem);
+  font-weight: 600;
+  line-height: normal;
+}
+
+.amount-price {
+  display: flex;
+  width: 33%;
+  height: 81px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-family: Inter;
+  font-size: clamp(1.125rem, 0.9231rem + 0.8974vw, 2rem);
+  font-weight: 700;
+  line-height: 24px; /* 75% */
+  border-radius: 8px;
+  background: #eb0000;
+  color: var(--font-color-primary);
+}
+
+.container-qr {
+  border-radius: 14.5%;
+  background: #034694;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+.Scan-qr {
+  color: var(--font-color-primary);
+  font-family: Inter;
+  font-size: clamp(1.125rem, 0.8798rem + 1.0897vw, 2.1875rem);
+  text-align: center;
+  font-weight: 700;
+  line-height: normal;
+  margin: 1rem 0;
+}
+
+.qr-playment {
+  max-width: 70%;
+}
+
+.qr-time {
+  color: var(--font-color-primary);
+  font-family: Inter;
+  font-size: clamp(0.75rem, 0.6346rem + 0.5128vw, 1.25rem);
+  font-weight: 300;
+  line-height: normal;
+  margin: 1rem 0;
+}
+
+.save-qr {
+  background-color: var(--font-color-primary);
+  display: flex;
+  width: auto;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #034694;
+  font-family: Inter;
+  font-size: clamp(0.75rem, 0.6346rem + 0.5128vw, 1.25rem);
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+  margin-bottom: 1rem;
+}
+.save-qr:hover {
+  background-color: var(--font-color-primary);
+  display: flex;
+  width: auto;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #034694;
+  font-family: Inter;
+  font-size: clamp(0.75rem, 0.6346rem + 0.5128vw, 1.25rem);
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+
+.qrPlayment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+}
+
+.detail-playment {
+  width: 60%;
+}
+
+.upload-playment-button {
+  width: 100%;
+  background: none;
+  color: #eb0000;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  height: 3rem;
+  border-radius: 8px;
+  border: 1px solid #979797;
+  background: #fff;
+}
+
+.upload-playment-button:hover {
+  width: 100%;
+  background: none;
+  color: #eb0000;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  height: 3rem;
+}
+
+.file-playment {
+  width: 60%;
+}

@@ -753,6 +753,10 @@ i {
   #form-steps {
     gap: 7rem;
   }
+  .checkd-date-title
+  {
+    width: 12% !important;
+  }
 
   .step {
     width: 90px !important;
@@ -952,7 +956,12 @@ i {
     height: 50px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin: 0 auto;
+    
+  }
+
+  .navbar a
+  {
+    margin-right: auto;
   }
 
   .navbar-button {
@@ -993,6 +1002,7 @@ i {
     width: auto;
   }
 }
+
 
 .bar1,
 .bar2,
@@ -1057,6 +1067,12 @@ i {
     gap: 2rem;
     width: 100%;
   }
+
+  .checkd-date-title
+  {
+    width: 14% !important;
+  }
+
   footer
   {
     padding-left: 0;
@@ -1103,6 +1119,58 @@ i {
   .contact-social
   {
     gap: .1rem !important;
+  }
+
+  .container-playment
+  {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .playment-detail
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+  #image-preview
+  {
+    margin: 2rem auto !important;
+  }
+  .file-playment
+  {
+    margin: 0 auto;
+  }
+  .amount-price
+  {
+    height: 38px !important;
+  }
+  .cf
+  {
+    display: none;
+  }
+}
+
+@media (max-width:650px){
+  .dataReward btn>a {
+    margin: 0 auto;
+    font-size: 0.875rem;
+    text-align: center;
+    width: auto;
+  }
+  .checkd-date-title
+  {
+    width: 20% !important;
+  }
+  .confirm-player {
+    width: 72% !important;
+  }
+}
+@media (max-width:460px){
+
+  .checkd-date-title
+  {
+    width: 30% !important;
   }
 }
 
