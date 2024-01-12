@@ -90,18 +90,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to validate the Age input
 
-  if (AgeInput) {
-    AgeInput.oninput = function () {
-      this.value = this.value.replace(/\D/g, "");
-    };
-    AgeInput.onblur = function () {
-      var value = this.value;
-      if (value.length < 1 || value.length > 3) {
-        showAlert("แจ้งเตือน!", "กรุณากรอกข้อมูลด้วย!", "error");
-        this.value = value.slice(0, 3);
-      }
-    };
-  }
+  // if (AgeInput) {
+  //   AgeInput.oninput = function () {
+  //     this.value = this.value.replace(/\D/g, "");
+  //   };
+  //   AgeInput.onblur = function () {
+  //     var value = this.value;
+  //     if (value.length < 1 || value.length > 3) {
+  //       showAlert("แจ้งเตือน!", "กรุณากรอกข้อมูลด้วย!", "error");
+  //       this.value = value.slice(0, 3);
+  //     }
+  //   };
+  // }
 
   // Form submission validation
 
