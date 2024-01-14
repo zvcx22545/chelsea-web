@@ -90,7 +90,7 @@
           *
         </p>
       </div>
-      <input type="text" id="Teamname" name="Teamname" required />
+      <input type="text" id="Teamname" name="Teamname" required class="required-field" />
       <div class="sport-title">
         <label for="Captain">กรอกชื่อ - นามสกุล ผู้สมัคร</label>
         <p style="
@@ -100,7 +100,7 @@
           *
         </p>
       </div>
-      <input type="text" id="Captain" name="Captain" placeholder="กรุณากรอกชื่อ - นามสกุล" required />
+      <input type="text" id="Captain" name="Captain" placeholder="กรุณากรอกชื่อ - นามสกุล" required  class="required-field"/>
       <div class="sport-title">
         <label for="phoneCaptain">เบอร์โทร</label>
         <p style="
@@ -111,7 +111,7 @@
         </p>
       </div>
       <input type="tel" id="phoneCaptain" name="phoneCaptain" pattern="\d{10}" maxlength="10"
-        placeholder="กรุณาเบอร์โทร 10 หลัก" required />
+        placeholder="กรุณาเบอร์โทร 10 หลัก" required class="required-field" />
       <div class="sport-title">
         <label for="emailCaptian">อีเมล</label>
         <p style="
@@ -121,9 +121,9 @@
           *
         </p>
       </div>
-      <input type="email" id="emailCaptian" name="emailCaptian" placeholder="กรุณากรอกอีเมล" required />
+      <input type="email" id="emailCaptian" name="emailCaptian" placeholder="กรุณากรอกอีเมล" required class="required-field" />
       <div class="btn-next">
-        <button class="next" type="submit" style="width: 196px" id="load2"> <!-- onclick="nextStep(2)" -->
+        <button class="next" type="button" style="width: 196px" id="load2"> <!-- onclick="nextStep(2)" -->
           ถัดไป
         </button>
       </div>

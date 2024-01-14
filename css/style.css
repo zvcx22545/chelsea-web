@@ -1,7 +1,6 @@
 /* Reset margin and padding for all elements */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
 
-
 :root {
   --primary-color: #033161;
 }
@@ -14,7 +13,7 @@
 }
 
 #news,
-#contact {
+#contact{
   margin-top: 0;
   /* เริ่มต้นที่ 0 */
   transition: margin-top 0.5s ease;
@@ -130,7 +129,7 @@
   place-items: center; 
   margin-top: 5rem;
 } */
-
+                           
 .innerContents {
   text-align: center;
   padding-left: 1rem;
@@ -185,7 +184,11 @@
   display: block;
 }
 
-
+.container-btn a
+{
+  display: inline-block;
+  width: 100%;
+}
 .main-contents {
   margin-bottom: 1.25rem;
 
@@ -223,8 +226,8 @@ btn>a {
   border-radius: 0.313rem;
   padding: 0.313rem;
 }
-/* --------------------------------------------- */
 
+/* --------------------------------------------- */
 .tabledata{
   display: flex;
   justify-content: center;
