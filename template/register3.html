@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/signup.css" />
+  <link rel="stylesheet" href="/css/form.css" />
+  <link rel="stylesheet" href="/css/collapsible.css" />
+  <link rel="icon" href="/img/new-logo.png" />
+</head>
+<title>SWFSC</title>
+
+<body>
+  <div class="navbar">
+    <a href="/index.html">
+      <img src="../img/new-logo.png" class="navbar-logo" alt="โลโก้" />
+    </a>
+    <div class="menu" id="myMenu">
+      <a href="/index.html">หน้าแรก</a>
+      <btn class="navbar-button"><a href="./register.html">ลงทะเบียน</a></btn>
+    </div>
+    <div class="hamburger-menu" onclick="toggleHam(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </div>
+
+  <img src="/img/banner.png" class="bg-top" alt="" />
+
+  <div class="content">
+    <div class="innerContents">
+      <h2 class="Title">
+        ลงทะเบียนเพื่อเข้าร่วมโครงการ “SINGHA WORLD OF FOOTBALL SKILLS
+        CHALLENGE”
+      </h2>
+      <p style="
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            font-size: clamp(0.75rem, 0.5795rem + 0.4545vw, 1.125rem);
+            padding: 0rem 1rem;
+          ">
+        จัดการแข่งขันโดย บริษัท สิงห์ คอร์เปอเรชั่น จำกัด
+        ผู้สนับสนุนสโมสรฟุตบอลเชลซีอย่างเป็นทางการ
+      </p>
+      <!-- เส้นขั้นหน้าระหว่างตรงหัวข้อกับลงทะเบียน -->
+      <hr class="linetitle" />
+    </div>
+  </div>
+  <div id="form-steps">
+    <div class="progress" id="progress"></div>
+    <div class="step active" data-step="1">1</div>
+    <div class="step" data-step="2">2</div>
+    <div class="step" data-step="3">3</div>
+    <div class="step" data-step="4">4</div>
+  </div>
+
+  <div class="form-section" data-step="3">
+    <!-- Form fields for step 3 -->
+    <div class="field-container">
+      <div class="field-name">สนามแข่งขัน</div>
+      <div class="select-field">ชื่อสนามที่เลือก xxxxxxxxx</div>
+      <div class="field-name">ชื่อทีม</div>
+      <div class="select-field">ชื่อทีม xxxxxxxxxxxxxxxxxxxxxxxxx</div>
+    </div>
+    <div class="data-player">
+      <div class="collapsible">
+        <input type="checkbox" id="collapsible-head" />
+        <label for="collapsible-head" class="field-player">เช็คข้อมูลผู้สมัคร</label>
+        <div class="all-player-data">
+          <hr class="hidden-hr" />
+            <div class="title-header">
+              <div class="Player-title">
+                <div class="add-player">ผู้สมัครคนที่ 1</div>
+                <p style="
+                        color: #eb0000;
+                        font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
+                        font-weight: 600;
+                      ">
+                  *
+                </p>
+              </div>
+            </div>
+            <div class="checked-data">
+              <div class="checkd-date-title">
+                <div class="nameplayer-1">ชื่อ - นามสกุล</div>
+                <p style="
+                        color: #eb0000;
+                        font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
+                      ">
+                  *
+                </p>
+              </div>
+              <p class="nameplayer">Name lastname</p>
+            </div>
+            <div class="checked-data">
+              <div class="checkd-date-title">
+                <div class="nameplayer-1">เบอร์โทร</div>
+                <p style="
+                        color: #eb0000;
+                        font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
+                      ">
+                  *
+                </p>
+              </div>
+              <p class="nameplayer">000-000-0000</p>
+            </div>
+            <div class="checked-data">
+              <div class="checkd-date-title">
+                <div class="nameplayer-1">อีเมล</div>
+                <p style="
+                        color: #eb0000;
+                        font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
+                      ">
+                  *
+                </p>
+              </div>
+              <p class="nameplayer">example@gmail.com</p>
+            </div>
+            <button class="confirm-player" type="button">
+              ยืนยันข้อมูล
+            </button>
+          <hr style="margin-top: 3rem" />
+        </div>
+      </div>
+    </div>
+    <div class="data-player">
+      <div class="collapsible">
+        <input type="checkbox" id="collapsible-Playment" />
+        <label for="collapsible-Playment" class="field-player">Payment Methods</label>
+        <div class="all-player-data">
+          <hr class="hidden-hr" />
+
+          <!-- form สำหรับส่งรูปภาพบิล -->
+
+          <form action="" method="">
+            <div class="container-playment">
+              <div class="playment-detail">
+                <div class="bank-account">ชื่อบัญชี</div>
+                <p>xxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <div class="bank-account">ธนาคาร</div>
+                <p>xxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                <div class="order-playment">
+                  รายการชำระค่าบริการของการสมัครแข่งขันฟุตบอล
+                </div>
+                <div class="playment-Amount">
+                  <div class="amount-container">
+                    <div class="all-amount">ยอดชำระทั้งหมด</div>
+                    <div class="amount-price">1,000.00</div>
+                  </div>
+                  <p class="detail-playment">*Lorem ipsum dolor sit amet consectetur. Nunc sit
+                    eleifend dictum quisque tortor velit purus. Enim in
+                    gravida tortor sit.
+                  </p>
+                  <div id="image-preview"></div>
+                  <label for="upload-payment" class="file-playment">
+                    <button type="button" class="upload-playment-button" id="upload-payment-button"
+                      >
+                      + แนบสลิปชำระเงิน
+                    </button>
+                  </label>
+                  <input type="file" id="upload-payment" name="upload-payment" required 
+                     />
+                </div>
+              </div>
+              <div class="qrPlayment">
+                <div class="container-qr">
+                  <div class="Scan-qr">Scan QR code</div>
+                  <img class="qr-playment" src="/img/websiteQRCode_noFrame 1.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="container-btn">
+              <button class="confirm-player" type="submit">
+                ยืนยันการชำระเงิน
+              </button>
+              <hr class="cf" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <img src="/img/new-logo.png" alt="โลโก้" class="logo-footer" />
+    <div class="topFooter">
+      <div class="footleft">
+        <p class="foot-content">
+          คาราบาวแดง ระเบิดศึกฟาดแข้งฟุตบอล 7 คน
+          ทัวร์นาเมนต์ที่ยิ่งใหญ่ระดับประเทศ เพื่อพาแชมป์ไปรับ Passion
+          ระดับโลกกับการร่วมฉลองแชมป์แบบติดขอบสนาม ในนัดชิงชนะเลิศ คาราบาวคัพ
+          2024 ที่ประเทศอังกฤษแบบยกทีม
+        </p>
+      </div>
+    </div>
+    <div class="hr">
+      <hr />
+    </div>
+    <div class="bottomFooter">
+      <div class="footBottom">
+        <p>
+          Copyrights © 2023 <u>Carabao Tawandang Co.,Ltd.</u> All rights
+          reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/32a2f35189.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/add-form.js"></script>
+  <script src="/js/responsive.js"></script>
+  <script src="/js/detect.js"></script>
+</body>
+
+</html>

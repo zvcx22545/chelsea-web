@@ -75,14 +75,13 @@
 
 .btn-control {
   display: flex;
-  justify-content: center;
   gap: 1rem;
   margin-top: 3rem;
-  display: flex;
   padding: 12px 20px;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  width: 100%;
 }
 
 .file-upload-info {
@@ -338,4 +337,14 @@
 
 .file-playment {
   width: 60%;
+}
+
+.next-2
+{
+  width: 100%;
+}
+
+.container-form
+{
+  margin: 5rem 0;
 }

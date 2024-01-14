@@ -1,125 +1,108 @@
-var formCount = 1; // Start with one form
+document.addEventListener("DOMContentLoaded", () => {
+  function previewImage(Imginput, ImgPreview) {
+    var fileInput = document.getElementById(Imginput);
+    var file = fileInput.files[0];
+    var reader = new FileReader();
 
-function addForm() {
-  if (formCount <= 3) {
-      var formContainer = document.getElementById("formContainer");
-      var newForm = document.createElement("div");
-      newForm.innerHTML = `
-      <hr style="margin-bottom: 1rem;">
-      <div class="title-header">
-      <div class="Player-title">
-        <label for="nameplayer-${formCount}" class="add-player">คนที่${
-          formCount + 1
-        }</label>
-        <p style="color: #eb0000; font-size: 1.5rem">*</p>
-      </div>
-      <div class="delete" onclick="removeForm(${formCount})">ลบ</div>
-    </div>
-        <div class="sport-title">
-        <label for="nameplayer${formCount}">กรอกชื่อ - นามสกุล</label>
-        <p style="color: #eb0000; font-size: 1.5rem">*</p>
-      </div>
-      <input type="text" id="nameplayer${formCount}" name="nameplayer${formCount}" required />
-      <div class="sport-title">
-        <label for="phoneplayer${formCount}">เบอร์โทร</label>
-        <p style="color: #eb0000; font-size: 1.5rem">*</p>
-      </div>
-      <input type="tel" id="phoneplayer${formCount}" name="phoneplayer${formCount}" placeholder="กรุณาเบอร์โทร 10 หลัก" required />
-      <div class="sport-title">
-        <label for="emailplayer${formCount}">อีเมล</label>
-        <p style="color: #eb0000; font-size: 1.5rem">*</p>
-      </div>
-      <input type="email" id="emailplayer${formCount}" name="emailplayer${formCount}" placeholder="กรุณากรอกอีเมล" required />
-      <div class="sport-title">
-      <div class="cardnumber">บัตรประชาชน/หนังสือเดินทาง</div>
-      <p style="color: #eb0000; font-size: 1.5rem">*</p>
-      </div>
-      <div id="image-preview-container-${formCount}"></div>
-    <label for="file-upload${formCount}" class="file-label">
-    <button type="button" class="upload-doc-button" onclick="document.getElementById('file-upload-${formCount}').click()">
-    + แนบไฟล์เอกสาร
-    </button>
-    </label>
-    <input type="file" id="file-upload-${formCount}" name="file-upload-${formCount}" onchange="previewImage(${formCount});" required />
-    <p class="file-upload-info">
-      *Lorem ipsum dolor sit amet consectetur. Nunc sit eleifend dictum
-      quisque tortor velit purus. Enim in gravida tortor sit.
-    </p>
-    <hr />
-    `;
-    newForm.id = "form-section-" + formCount; // Update ID of the new form section
-    newForm.style.marginTop = "10rem";
-    newForm.style.marginBottom = "2rem";
-    formContainer.appendChild(newForm);
-    formCount++;
-  } else {
-    Swal.fire({
-      title: "แจ้งเตือน!",
-      text: "สามารถเพิ่มฟอร์มได้สูงสุด 4 ฟอร์ม",
-      icon: "warning",
-      confirmButtonText: "ตกลง"
-    });
-  }
-}
+    reader.onloadend = function () {
+      var img = document.createElement("img");
+      img.src = reader.result;
+      img.style.maxWidth = "20%";
+      img.style.maxHeight = "20%";
+      img.style.display = "flex";
+      img.style.margin = "auto";
+      img.style.marginTop = "2rem";
+      img.style.marginBottom = "2rem";
 
-function previewImage(formNumber) {
-  var fileInputId = "file-upload-" + formNumber;
-  var fileInput = document.getElementById(fileInputId);
-  var file = fileInput.files[0];
-  var reader = new FileReader();
+      var container = document.getElementById(ImgPreview);
+      container.innerHTML = "";
+      container.appendChild(img);
+    };
 
-  reader.onloadend = function() {
-    var img = document.createElement("img");
-    img.src = reader.result;
-    img.style.maxWidth = "20%"; // Adjust size as needed
-    img.style.maxHeight = "20%";
-    img.style.display = "flex";
-    img.style.margin = "auto";
-    img.style.marginTop = "2rem";
-    img.style.marginBottom = "2rem";
-
-    var containerId = "image-preview-container-" + formNumber;
-    var container = document.getElementById(containerId);
-    container.innerHTML = ""; // Clear previous images
-    container.appendChild(img); // Add new image
-  };
-
-  if (file) {
-    reader.readAsDataURL(file);
-  } else {
-    var containerId = "image-preview-container-" + formNumber;
-    document.getElementById(containerId).innerHTML = "";
-  }
-}
-
-// Remove Form 
-
-function removeForm(formNumber) {
-  // หา DOM element ของฟอร์มที่ต้องการลบ
-  var formToRemove = document.getElementById("form-section-" + formNumber);
-
-  if (formToRemove) {
-      // ลบฟอร์มออกจาก DOM
-      formToRemove.remove();
-
-      // ลดจำนวนฟอร์มที่เหลือลง 1
-      formCount--;
-  }
-}
-
-// img preview for playment
-function previewImages() {
-  var preview = document.getElementById('image-preview');
-  var file    = document.getElementById('upload-payment').files[0];
-  var reader  = new FileReader();
-
-  reader.onloadend = function () {
-    preview.innerHTML = '<img src="' + reader.result + '" alt="Image preview" />';
+    if (file) {
+      reader.readAsDataURL(file);
+    } else {
+      document.getElementById(ImgPreview).innerHTML = "";
+    }
   }
 
-  if (file) {
-    reader.readAsDataURL(file); // reads the data as a URL
-  } else {
-    preview.innerHTML = "";
+  // Event listener for the upload button 1
+  function addEventListeners() {
+    const fileUpload2 = document.getElementById("file-upload-2");
+    const uploadButton2 = document.getElementById("upload-button-2");
+    const fileUpload3 = document.getElementById("file-upload-3");
+    const uploadButton3 = document.getElementById("upload-button-3");
+    const fileUpload0 = document.getElementById("file-upload-0");
+    const uploadButton0 = document.getElementById("upload-button-0");
+    const fileUpload4 = document.getElementById("file-upload-4");
+    const uploadButton4 = document.getElementById("upload-button-4");
+    // payment preview
+    const uploadPayment = document.getElementById("upload-payment");
+    const uploadPaymentButton = document.getElementById(
+      "upload-payment-button"
+    );
+
+    if (fileUpload2 && uploadButton2) {
+      fileUpload2.addEventListener("change", () => {
+        previewImage("file-upload-2", "image-preview-container-2");
+      });
+
+      uploadButton2.addEventListener("click", () => {
+        fileUpload2.click();
+      });
+    }
+    if (fileUpload3 && uploadButton3) {
+      fileUpload3.addEventListener("change", () => {
+        previewImage("file-upload-3", "image-preview-container-3");
+      });
+
+      uploadButton3.addEventListener("click", () => {
+        fileUpload3.click();
+      });
+    }
+    if (fileUpload0 && uploadButton0) {
+      fileUpload0.addEventListener("change", () => {
+        previewImage("file-upload-0", "image-preview-container-0");
+      });
+
+      uploadButton0.addEventListener("click", () => {
+        fileUpload0.click();
+      });
+    }
+    if (fileUpload4 && uploadButton4) {
+      fileUpload4.addEventListener("change", () => {
+        previewImage("file-upload-4", "image-preview-container-4");
+      });
+
+      uploadButton4.addEventListener("click", () => {
+        fileUpload4.click();
+      });
+    }
+    if (uploadPayment && uploadPaymentButton) {
+      uploadPayment.addEventListener("change", () => {
+        previewImage("upload-payment", "image-preview");
+      });
+
+      uploadPaymentButton.addEventListener("click", () => {
+        uploadPayment.click();
+      });
+    }
   }
-}
+  addEventListeners();
+ 
+});
+
+// Remove Form
+
+// function removeForm(formNumber) {
+//   // หา DOM element ของฟอร์มที่ต้องการลบ
+//   var formToRemove = document.getElementById("form-section-" + formNumber);
+
+//   if (formToRemove) {
+//       // ลบฟอร์มออกจาก DOM
+//       formToRemove.remove();
+
+//       // ลดจำนวนฟอร์มที่เหลือลง 1
+//       formCount--;
+//   }
+// }

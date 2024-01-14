@@ -203,6 +203,7 @@ button:hover {
 }
 .Player-title {
   display: flex;
+  gap: 0.625rem;
 }
 input[type="file"] {
   display: none;
@@ -230,5 +231,10 @@ input[type="file"] {
   margin: 0 auto;
   display: flex;
 justify-content: center;
+}
+
+.confirm-btn a
+{
+  display: inline block;
 }
 

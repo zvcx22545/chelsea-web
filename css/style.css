@@ -169,7 +169,6 @@
   margin: auto;
   margin-bottom: 2rem;
   animation: animate 0.5s;
-  display: none; /* Initially hidden */
 }
 
 @keyframes animate {
