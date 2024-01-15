@@ -24,7 +24,8 @@ input[type="text"],
 input[type="password"],
 input[type="tel"],
 input[type="email"],
-input[type="file"] {
+input[type="file"],
+input[type="date"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 1.5rem;
@@ -36,6 +37,11 @@ input[type="file"] {
   font-size: clamp(0.75rem, 0.5795rem + 0.4545vw, 1.125rem);
   font-weight: 400;
   line-height: normal;
+}
+
+input[type="date"]
+{
+  cursor: pointer;
 }
 
 button {
@@ -59,7 +65,52 @@ button:hover {
   margin-bottom: 2rem;
 }
 
-#form-steps::before,.progress
+#form-steps::before,.progress,.progress2
+{
+  content: "";
+  margin: 0 auto;
+  height: 8%;
+  top: 50%;
+  background-color: #dcdcdc;
+  width: 100%;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: -3;  
+  left: 0;
+}
+
+.progress3
+{
+  content: "";
+  margin: 0 auto;
+  height: 8%;
+  top: 50%;
+  background-color: #dcdcdc;
+  width: 100%;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: -2;  
+  left: 0;
+}
+
+.progress3 {
+  width: 60%;
+  background-color: var(--primary-color); /* or any color you wish */
+  /* Add the animation below */
+  animation: widthGrowProgress3 1s ease-out forwards;
+}
+
+@keyframes widthGrowProgress3 {
+  from {
+      width: 30%;
+  }
+  to {
+      width: 60%;
+  }
+}
+
+/* Progress step 4 at register4.html */
+.progress4
 {
   content: "";
   margin: 0 auto;
@@ -73,13 +124,43 @@ button:hover {
   left: 0;
 }
 
+@keyframes widthGrowProgress4 {
+  from {
+      width: 60%;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+.progress4 {
+  width: 100%;
+  background-color: var(--primary-color);
+  /* Add the animation below */
+  animation: widthGrowProgress4 1s ease-out forwards;
+}
+
 .progress
 {
   width: 0%;
   background-color: var(--primary-color);
   transition: 0.3s;
 }
+.progress2 {
+  width: 30%;
+  background-color: var(--primary-color);
+  /* Add the animation below */
+  animation: widthGrow 1s ease-out forwards;
+}
 
+@keyframes widthGrow {
+  from {
+      width: 0%;
+  }
+  to {
+      width: 30%;
+  }
+}
 .step {
   border-radius: 100%;
   width: 104px;
@@ -238,3 +319,16 @@ justify-content: center;
   display: inline block;
 }
 
+.next2
+{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+.next3
+{
+  display: flex;
+  width: 20%;
+}

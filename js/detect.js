@@ -1,69 +1,67 @@
-document.addEventListener("DOMContentLoaded", () => {
-  attachFormSubmitHandler("form-1");
-  attachFormSubmitHandler("form-2");
+// document.addEventListener("DOMContentLoaded", () => {
+//   attachFormSubmitHandler("form-1");
+//   attachFormSubmitHandler("form-2");
 
-  function attachFormSubmitHandler(formId) {
-    const form = document.getElementById(formId);
-    if (form) {
-      form.onsubmit = function (event) {
-        event.preventDefault();
-        handleFormSubmission(form);
-      };
-    }
-  }
+//   function attachFormSubmitHandler(formId) {
+//     const form = document.getElementById(formId);
+//     console.log(`element id is ${formId} `)
+//     if (form) {
+//       form.onsubmit = function (event) {
+//         event.preventDefault();
+//         handleFormSubmission(form);
+//         console.log(`element id is ${form} `)
 
-  function handleFormSubmission(form) {
-    // Gather data from the form fields
-    let formData = new FormData(form);
-    let allFieldsFilled = true;
+//       };
+//     }
+//   }
 
-    // Check each required field
-    form.querySelectorAll(".required-field").forEach(field => {
-      if (!formData.get(field.name) || formData.get(field.name).trim() === '') {
-        allFieldsFilled = false;
-      }
-    });
+//   function handleFormSubmission(form) {
+//     // Gather data from the form fields
+//     let formData = new FormData(form);
+//     let allFieldsFilled = true;
 
-    if (!allFieldsFilled) {
-      showAlert("แจ้งเตือน!", "กรุณากรอกข้อมูลให้ครบถ้วน!", "error");
-      return;
-    }
+//     // Check each required field
+//     form.querySelectorAll(".required-field").forEach(field => {
+//       if (!formData.get(field.name) || formData.get(field.name).trim() === '') {
+//         allFieldsFilled = false;
+//         console.log(`have data is ${formData} `)
 
-    // Create an XMLHttpRequest object
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", form.action, true);
-    xhr.setRequestHeader("Content-Type", "application/json");
+//       }
+//     });
 
-    // Prepare JSON data from FormData
-    var data = {};
-    formData.forEach((value, key) => (data[key] = value));
-    var jsonData = JSON.stringify(data);
+//     if (!allFieldsFilled) {
+//       showAlert("แจ้งเตือน!", "กรุณากรอกข้อมูลให้ครบถ้วน!", "error");
+//       return;
+//     }
 
-    xhr.onload = function () {
-      if (xhr.status === 200) {
-        console.log("Data sent successfully");
-      } else {
-        console.error("Error sending data: " + xhr.status);
-      }
-    };
+//     // Create an XMLHttpRequest object
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("POST", form.action, true);
+//     xhr.setRequestHeader("Content-Type", "application/json");
 
-    xhr.onerror = function () {
-      console.error("Error sending data");
-    };
+//     // Prepare JSON data from FormData
+//     var data = {};
+//     formData.forEach((value, key) => (data[key] = value));
+//     var jsonData = JSON.stringify(data);
 
-    xhr.send(jsonData);
-  }
-});
+//     xhr.onload = function () {
+//       if (xhr.status === 200) {
+//         console.log("Data sent successfully");
+//       } else {
+//         console.error("Error sending data: " + xhr.status);
+//       }
+//     };
 
-function showAlert(title, text, icon) {
-  // Assuming you have Swal available
-  Swal.fire({
-    title: title,
-    text: text,
-    icon: icon || "error",
-    confirmButtonText: "ตกลง",
-  });
-}
+//     xhr.onerror = function () {
+//       console.error("Error sending data");
+//     };
+
+//     xhr.send(jsonData);
+//     console.log(jsonData)
+//   }
+// });
+
+
 
 function showAlert(title, text, icon) {
   Swal.fire({
@@ -143,6 +141,39 @@ document.addEventListener("DOMContentLoaded", function () {
   setupInputValidation("nameplayer-2", null, "phoneplayer-2");
   setupInputValidation("nameplayer-3", null, "phoneplayer-3");
   setupInputValidation("nameplayer-4", null, "phoneplayer-4");
+
+  //  check value form input
+
+  function checkInputs(idinput1,idinput2,idinput3) {
+    var input1 = document.getElementById(idinput1).value;
+    var input2 = document.getElementById(idinput2).value;
+    var input3 = document.getElementById(idinput3).value;
+    
+    if (input1 !== '') {
+      // ถ้า input ช่องแรกไม่ว่าง
+      // จะบังคับให้กรอก input 2 และ input 3
+      if (input2 === '' || input3 === '') {
+        showAlert(
+          "แจ้งเตือน!",
+          "กรุณากรอกข้อมูลให้ครบถ้วน!",
+          "error"
+        );
+      }
+    } else {
+      // ถ้า input ช่องแรกว่าง
+      // ไม่บังคับให้กรอก input 2 และ input 3
+    }
+  }
+
+  // แสดงข้อความเมื่อคลิกปุ่ม "ถัดไป"
+  let button = document.querySelector('.next-2');
+  button.addEventListener('click', function() {
+    checkInputs("nameplayer-2", "dateplayer-2", "phoneplayer-2");
+  });
+  let checkinput3 = document.querySelector('.next-2');
+  checkinput3.addEventListener('click', function() {
+    checkInputs("nameplayer-3", "dateplayer-3", "phoneplayer-3");
+  });
 });
 
 // Function to validate the Age input

@@ -14,9 +14,9 @@
 
 <body>
   <div class="navbar">
-    <a href="/index.html">
-      <img src="../img/new-logo.png" class="navbar-logo" alt="โลโก้" />
-    </a>
+
+    <a href="../index.html"><img src="/img/SWOF_Logo_1-01.png" class="navbar-logo" alt="โลโก้"></a>
+
     <div class="menu" id="myMenu">
       <a href="/index.html">หน้าแรก</a>
       <btn class="navbar-button"><a href="./register.html">ลงทะเบียน</a></btn>
@@ -28,8 +28,12 @@
     </div>
   </div>
 
-  <img src="/img/banner.png" class="bg-top" alt="" />
-
+  <div class="all-contents">
+    <div class="bg-top">
+      <img src="/img/bg-top-new.jpg" alt="" height="400">
+      <img src="/img/mobile.jpg" alt="" height="400">
+    </div>
+  </div>
   <div class="content">
     <div class="innerContents">
       <h2 class="Title">
@@ -50,10 +54,11 @@
     </div>
   </div>
   <div id="form-steps">
-    <div class="progress" id="progress"></div>
+    <div class="progress2" id="progress2"></div>
+    <div class="progress3" id="progress3"></div>
     <div class="step active" data-step="1">1</div>
-    <div class="step" data-step="2">2</div>
-    <div class="step" data-step="3">3</div>
+    <div class="step active" data-step="2">2</div>
+    <div class="step active" data-step="3">3</div>
     <div class="step" data-step="4">4</div>
   </div>
 
@@ -71,57 +76,57 @@
         <label for="collapsible-head" class="field-player">เช็คข้อมูลผู้สมัคร</label>
         <div class="all-player-data">
           <hr class="hidden-hr" />
-            <div class="title-header">
-              <div class="Player-title">
-                <div class="add-player">ผู้สมัครคนที่ 1</div>
-                <p style="
+          <div class="title-header">
+            <div class="Player-title">
+              <div class="add-player">ผู้สมัครคนที่ 1</div>
+              <p style="
                         color: #eb0000;
                         font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
                         font-weight: 600;
                       ">
-                  *
-                </p>
-              </div>
+                *
+              </p>
             </div>
-            <div class="checked-data">
-              <div class="checkd-date-title">
-                <div class="nameplayer-1">ชื่อ - นามสกุล</div>
-                <p style="
+          </div>
+          <div class="checked-data">
+            <div class="checkd-date-title">
+              <div class="nameplayer-1">ชื่อ - นามสกุล</div>
+              <p style="
                         color: #eb0000;
                         font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
                       ">
-                  *
-                </p>
-              </div>
-              <p class="nameplayer">Name lastname</p>
+                *
+              </p>
             </div>
-            <div class="checked-data">
-              <div class="checkd-date-title">
-                <div class="nameplayer-1">เบอร์โทร</div>
-                <p style="
+            <p class="nameplayer">Name lastname</p>
+          </div>
+          <div class="checked-data">
+            <div class="checkd-date-title">
+              <div class="nameplayer-1">เบอร์โทร</div>
+              <p style="
                         color: #eb0000;
                         font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
                       ">
-                  *
-                </p>
-              </div>
-              <p class="nameplayer">000-000-0000</p>
+                *
+              </p>
             </div>
-            <div class="checked-data">
-              <div class="checkd-date-title">
-                <div class="nameplayer-1">อีเมล</div>
-                <p style="
+            <p class="nameplayer">000-000-0000</p>
+          </div>
+          <div class="checked-data">
+            <div class="checkd-date-title">
+              <div class="nameplayer-1">อีเมล</div>
+              <p style="
                         color: #eb0000;
                         font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
                       ">
-                  *
-                </p>
-              </div>
-              <p class="nameplayer">example@gmail.com</p>
+                *
+              </p>
             </div>
-            <button class="confirm-player" type="button">
-              ยืนยันข้อมูล
-            </button>
+            <p class="nameplayer">example@gmail.com</p>
+          </div>
+          <button class="confirm-player-3" type="button">
+            ยืนยันข้อมูล
+          </button>
           <hr style="margin-top: 3rem" />
         </div>
       </div>
@@ -156,13 +161,11 @@
                   </p>
                   <div id="image-preview"></div>
                   <label for="upload-payment" class="file-playment">
-                    <button type="button" class="upload-playment-button" id="upload-payment-button"
-                      >
+                    <button type="button" class="upload-playment-button" id="upload-payment-button">
                       + แนบสลิปชำระเงิน
                     </button>
                   </label>
-                  <input type="file" id="upload-payment" name="upload-payment" required 
-                     />
+                  <input type="file" id="upload-payment" name="upload-payment" required />
                 </div>
               </div>
               <div class="qrPlayment">
@@ -173,9 +176,9 @@
               </div>
             </div>
             <div class="container-btn">
-              <button class="confirm-player" type="submit">
+             <a class="next3" href="./register4.html"> <button class="confirm-player" type="submit">
                 ยืนยันการชำระเงิน
-              </button>
+              </button></a>
               <hr class="cf" />
             </div>
           </form>
@@ -185,14 +188,10 @@
   </div>
 
   <footer>
-    <img src="/img/new-logo.png" alt="โลโก้" class="logo-footer" />
+    <img src="/img/SWOF_Logo_1-01.png" alt="โลโก้" class="logo-footer" />
     <div class="topFooter">
       <div class="footleft">
         <p class="foot-content">
-          คาราบาวแดง ระเบิดศึกฟาดแข้งฟุตบอล 7 คน
-          ทัวร์นาเมนต์ที่ยิ่งใหญ่ระดับประเทศ เพื่อพาแชมป์ไปรับ Passion
-          ระดับโลกกับการร่วมฉลองแชมป์แบบติดขอบสนาม ในนัดชิงชนะเลิศ คาราบาวคัพ
-          2024 ที่ประเทศอังกฤษแบบยกทีม
         </p>
       </div>
     </div>
@@ -201,10 +200,7 @@
     </div>
     <div class="bottomFooter">
       <div class="footBottom">
-        <p>
-          Copyrights © 2023 <u>Carabao Tawandang Co.,Ltd.</u> All rights
-          reserved.
-        </p>
+
       </div>
     </div>
   </footer>

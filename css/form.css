@@ -139,7 +139,15 @@
 .confirm-player {
   display: block;
   margin: 0 auto;
-  width: 25%;
+  width: 100%;
+  height: 10%;
+  padding: 12px 20px;
+  gap: 12px;
+}
+.confirm-player-3 {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
   height: 10%;
   padding: 12px 20px;
   gap: 12px;

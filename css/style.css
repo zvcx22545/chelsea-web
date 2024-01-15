@@ -12,6 +12,9 @@
   box-sizing: border-box;
   font-family: 'Noto Sans Thai', sans-serif;
 }
+h1{
+  font-size: 1.5rem
+}
 
 #news,
 #contact {
@@ -20,7 +23,9 @@
   transition: margin-top 0.5s ease;
   /* ใช้การเปลี่ยนแปลง margin-top ด้วย animation ให้มีความสามารถในการเลื่อน */
 }
-
+.all-contents{
+  margin: 0 10rem;
+}
 /* สไตล์แถบนำทาง */
 .navbar {
   position: fixed;
@@ -48,6 +53,9 @@
   text-align: center;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px -10px;
 }
 
 .left-contents {
@@ -81,15 +89,18 @@
   height: 80%;
   /* คุณสามารถปรับขนาดตามโลโก้จริงได้ */
   margin-right: 1.25rem;
+  width: 15%;
+  display: flex;
 }
 
 /* ลิงก์นำทาง */
 .navbar a {
   color: white;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 15px;
   font-size: 1rem;
   /* ปรับขนาดตามต้องการ */
+  width: 50%;
 }
 
 /* ปุ่มบนแถบนำทาง */
@@ -116,10 +127,13 @@
   color: white;
 }
 
-.bg-top {
+.bg-top img{
   width: 100%;
   text-align: center;
-  margin-top: 7.5rem;
+  margin-top: 10rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px -10px;  
+  margin-bottom: 2rem;
 }
 
 /* .homeTop-bg{
@@ -273,6 +287,7 @@ th:nth-child(1){
 } 
 td:nth-child(1){
   width: 200px;
+  height: 49.5px;
   position: fixed;
   background-color: white;
   position: absolute;
@@ -319,6 +334,9 @@ td:nth-child(2){
   background-color: #050E4F;
   height: auto;
   width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 5px 20px -10px;
   justify-content: space-between;
   padding-left:  2rem;
 }
@@ -381,6 +399,7 @@ td:nth-child(2){
   height: 42.25rem;
   width: calc(100% - 60%);
   vertical-align: bottom;
+  border-top-right-radius: 10px;
 }
 
 .dataRegis {
@@ -390,16 +409,20 @@ td:nth-child(2){
   background-color: #033061f3;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 110vh;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 5px 20px -10px;
 }
 
 .imagLeft {
-  background-image: url("/img/imageLeft.png");
+  background-image: url("/img/SWOF_Skill-01.jpg");
   /* background-color: #033061f3; */
   background-size: 80% 100%;
   background-repeat: no-repeat;
   background-position: bottom left;
   width: 50%;
+  border-bottom-left-radius: 10px;
 }
 
 .Dataright {
@@ -638,6 +661,9 @@ i {
   margin-top: 2rem;
   text-align: center;
 }
+.bg-top img:nth-child(2){
+  display: none;
+}
 
 /* CSS Media Queries สำหรับแท็บเล็ต 768 */
 @media screen and (max-width: 1366px) {
@@ -649,6 +675,15 @@ i {
   .main-contents br{
     display: none;  
   }
+
+  .all-contents{
+    margin: 0 2rem;
+  }
+
+  .dataRegis{
+    height: 100%;
+  }
+
   .dataReward btn>a {
     font-size: clamp(1rem, 0.9167rem + 0.1736vw, 1.125rem);
     margin: 0 28%;
@@ -706,6 +741,11 @@ i {
   .navbar {
     justify-content: center;
     padding: 1rem;
+    display: block;
+    align-items: center;
+  }
+  .navbar .menu{
+    margin-top: 1rem;
   }
 
   .navbar-logo {
@@ -771,6 +811,9 @@ i {
   .navbar {
     padding: 0 2rem;
   }
+  .hamburger-menu{
+    top: 0.4375rem !important;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -828,6 +871,11 @@ i {
   #form-steps {
     gap: 4rem;
   }
+
+  .next3
+{
+  width: 40% !important;
+}
 }
 
 @media (max-width: 840px) {
@@ -897,6 +945,7 @@ i {
   }
   
   
+  
 }
 
 @media (max-width: 550px) {
@@ -906,7 +955,12 @@ i {
   #form-steps {
     max-width: 50%;
   }
-  
+  .bg-top img:nth-child(1){
+    display: none;
+  }
+  .bg-top img:nth-child(2){
+    display: block;
+  }
 }
 
 /* Hamburger menu css */
@@ -931,6 +985,10 @@ i {
   td:nth-child(1){
     box-shadow: .2rem 0 2px 0 #ccc;
   }
+  .confirm-player-3 {
+
+    width: 40% !important;
+  }
 }
 
 @media (min-width:650px)
@@ -941,7 +999,7 @@ i {
   
 }
 
-@media (max-width:650px) {
+@media (max-width:1366px) {
   .table-compete u{
     display: none;
   }
@@ -949,6 +1007,10 @@ i {
     width: 100%;
     margin-top: 0;
   }
+  .bg-top img{
+    margin-top: 2rem;
+  }
+  
   #menuToggle:checked ~ .menu {
     display: block; /* Or your desired display style */
     /* Add other styles for active state */
@@ -966,6 +1028,8 @@ i {
     height: auto;
     position: relative;
     flex-direction: column;
+    display: flex;
+    /* padding: 1rem !important; */
   }
  
   .menu-active {
@@ -1013,9 +1077,10 @@ i {
     cursor: pointer;
     position: absolute;
     right: 1rem;
-    top: 0.4375rem;
+    /* top: 0.4375rem; */
+    top: 1.5rem;
   }
-
+  
   /* ------------------------------- */
   
 }
@@ -1031,6 +1096,9 @@ i {
     font-size: 0.875rem;
     text-align: center;
     width: auto;
+  }
+  .all-contents{
+    margin: 0 .5rem;
   }
 }
 
@@ -1063,7 +1131,7 @@ i {
   .taberdata .col1{
     overflow-x: auto !important;
   }
-
+  
   .col1{
     white-space: nowrap;
   }
@@ -1073,6 +1141,7 @@ i {
 {
   display: flex;
   margin: 0 auto 2rem ;
+  width: 10%;
 }
 
 @media (max-width:800px)
@@ -1176,7 +1245,7 @@ i {
   }
 }
 
-@media (max-width:650px){
+@media (max-width:1366px){
   .dataReward btn>a {
     margin: 0 auto;
     font-size: 0.875rem;
@@ -1188,7 +1257,7 @@ i {
     width: 20% !important;
   }
   .confirm-player {
-    width: 72% !important;
+    width: 100% !important;
   }
 }
 @media (max-width:460px){
@@ -1196,6 +1265,21 @@ i {
   .checkd-date-title
   {
     width: 30% !important;
+  }
+
+  .next3
+{
+  width: 50% !important;
+}
+
+  h1{
+    font-size: 1.5rem
+  }
+  h2{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.825rem;
   }
 }
 

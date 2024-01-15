@@ -14,9 +14,9 @@
 
 <body>
   <div class="navbar">
-    <a href="/index.html">
-      <img src="../img/new-logo.png" class="navbar-logo" alt="โลโก้" />
-    </a>
+
+    <a href="../index.html"><img src="/img/SWOF_Logo_1-01.png" class="navbar-logo" alt="โลโก้"></a>
+
     <div class="menu" id="myMenu">
       <a href="/index.html">หน้าแรก</a>
       <btn class="navbar-button"><a href="./register.html">ลงทะเบียน</a></btn>
@@ -28,7 +28,12 @@
     </div>
   </div>
 
-  <img src="/img/banner.png" class="bg-top" alt="" />
+  <div class="all-contents">
+    <div class="bg-top">
+      <img src="/img/bg-top-new.jpg" alt="" height="400">
+      <img src="/img/mobile.jpg" alt="" height="400">
+    </div>
+  </div>
 
   <div class="content">
     <div class="innerContents">
@@ -90,9 +95,9 @@
           *
         </p>
       </div>
-      <input type="text" id="Teamname" name="Teamname" required />
+      <input type="text" id="Teamname" name="Teamname" placeholder="กรุณากรอกชื่อทีม" required />
       <div class="sport-title">
-        <label for="Captain">กรอกชื่อ - นามสกุล ผู้สมัคร</label>
+        <label for="Captain">กรอกชื่อ - นามสกุล หัวหน้าทีม</label>
         <p style="
               color: #eb0000;
               font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
@@ -113,6 +118,16 @@
       <input type="tel" id="phoneCaptain" name="phoneCaptain" pattern="\d{10}" maxlength="10"
         placeholder="กรุณาเบอร์โทร 10 หลัก" required />
       <div class="sport-title">
+        <label for="emailCaptian">Line ID</label>
+        <p style="
+              color: #eb0000;
+              font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
+            ">
+          *
+        </p>
+      </div>
+      <input type="text" id="LindID" name="LindID" placeholder="กรุณากรอก ID Line" required />
+      <div class="sport-title">
         <label for="emailCaptian">อีเมล</label>
         <p style="
               color: #eb0000;
@@ -122,23 +137,22 @@
         </p>
       </div>
       <input type="email" id="emailCaptian" name="emailCaptian" placeholder="กรุณากรอกอีเมล" required />
+    
+      <hr />
       <div class="btn-next">
-        <button class="next" type="submit" style="width: 196px" id="load2"> <!-- onclick="nextStep(2)" -->
-          ถัดไป
-        </button>
+        <a class="next2" href="./register2.html"><button class="next" type="button" style="width: 196px" id="load2">
+        <!-- onclick="nextStep(2)" -->
+        ถัดไป
+        </button></a>
       </div>
     </form>
   </div>
 
   <footer>
-    <img src="/img/new-logo.png" alt="โลโก้" class="logo-footer" />
+    <img src="/img/SWOF_Logo_1-01.png" alt="โลโก้" class="logo-footer" />
     <div class="topFooter">
       <div class="footleft">
         <p class="foot-content">
-          คาราบาวแดง ระเบิดศึกฟาดแข้งฟุตบอล 7 คน
-          ทัวร์นาเมนต์ที่ยิ่งใหญ่ระดับประเทศ เพื่อพาแชมป์ไปรับ Passion
-          ระดับโลกกับการร่วมฉลองแชมป์แบบติดขอบสนาม ในนัดชิงชนะเลิศ คาราบาวคัพ
-          2024 ที่ประเทศอังกฤษแบบยกทีม
         </p>
       </div>
     </div>
@@ -147,10 +161,7 @@
     </div>
     <div class="bottomFooter">
       <div class="footBottom">
-        <p>
-          Copyrights © 2023 <u>Carabao Tawandang Co.,Ltd.</u> All rights
-          reserved.
-        </p>
+
       </div>
     </div>
   </footer>
@@ -164,3 +175,25 @@
 </body>
 
 </html>
+
+
+  <!-- <div class="sport-title">
+        <div class="cardnumber">บัตรประชาชน/หนังสือเดินทาง</div>
+        <p style="
+                color: #eb0000;
+                font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
+              ">
+          *
+        </p>
+      </div>
+      <div id="image-preview-container-4"></div>
+      <label for="file-upload-4" class="file-label">
+        <button type="button" class="upload-doc-button" id="upload-button-4">
+          + แนบไฟล์เอกสาร
+        </button>
+      </label>
+      <input type="file" id="file-upload-4" name="file-upload-4"  required />
+      <p class="file-upload-info">
+        *Lorem ipsum dolor sit amet consectetur. Nunc sit eleifend dictum
+        quisque tortor velit purus. Enim in gravida tortor sit.
+      </p> -->
