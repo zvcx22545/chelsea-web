@@ -1,66 +1,3 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   attachFormSubmitHandler("form-1");
-//   attachFormSubmitHandler("form-2");
-
-//   function attachFormSubmitHandler(formId) {
-//     const form = document.getElementById(formId);
-//     console.log(`element id is ${formId} `)
-//     if (form) {
-//       form.onsubmit = function (event) {
-//         event.preventDefault();
-//         handleFormSubmission(form);
-//         console.log(`element id is ${form} `)
-
-//       };
-//     }
-//   }
-
-//   function handleFormSubmission(form) {
-//     // Gather data from the form fields
-//     let formData = new FormData(form);
-//     let allFieldsFilled = true;
-
-//     // Check each required field
-//     form.querySelectorAll(".required-field").forEach(field => {
-//       if (!formData.get(field.name) || formData.get(field.name).trim() === '') {
-//         allFieldsFilled = false;
-//         console.log(`have data is ${formData} `)
-
-//       }
-//     });
-
-//     if (!allFieldsFilled) {
-//       showAlert("แจ้งเตือน!", "กรุณากรอกข้อมูลให้ครบถ้วน!", "error");
-//       return;
-//     }
-
-//     // Create an XMLHttpRequest object
-//     var xhr = new XMLHttpRequest();
-//     xhr.open("POST", form.action, true);
-//     xhr.setRequestHeader("Content-Type", "application/json");
-
-//     // Prepare JSON data from FormData
-//     var data = {};
-//     formData.forEach((value, key) => (data[key] = value));
-//     var jsonData = JSON.stringify(data);
-
-//     xhr.onload = function () {
-//       if (xhr.status === 200) {
-//         console.log("Data sent successfully");
-//       } else {
-//         console.error("Error sending data: " + xhr.status);
-//       }
-//     };
-
-//     xhr.onerror = function () {
-//       console.error("Error sending data");
-//     };
-
-//     xhr.send(jsonData);
-//     console.log(jsonData)
-//   }
-// });
-
 
 
 function showAlert(title, text, icon) {
@@ -71,6 +8,42 @@ function showAlert(title, text, icon) {
     confirmButtonText: "ตกลง",
   });
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const CheckInputValue = (submitid) => {
+    const submitButton = document.getElementById(submitid);
+    if (submitButton) {
+      submitButton.addEventListener("click", function (event) {
+        var requiredFields = document.querySelectorAll(".required-field");
+        var allFieldsFilled = true;
+
+        // Check each field
+        for (var i = 0; i < requiredFields.length; i++) {
+          if (requiredFields[i].value.trim() === "") {
+            allFieldsFilled = false;
+            break;
+          }
+        }
+
+        // If any field is empty, show SweetAlert2 alert and prevent form submission
+        if (!allFieldsFilled) {
+          event.preventDefault();
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "กรุณากรอกข้อมูลให้ครบถ้วน!",
+          });
+        }
+      });
+    } else {
+      console.error("Submit button not found:", submitid);
+    }
+  };
+  CheckInputValue("load2");
+  CheckInputValue("load3");
+});
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   function setupInputValidation(teamNameId, Nameid, phoneCaptainId) {
@@ -208,3 +181,97 @@ document.addEventListener("DOMContentLoaded", function () {
 // }
 
 // Form submission validation
+// attachFormSubmitHandler("form-1");
+//   attachFormSubmitHandler("form-2");
+//   attachFormSubmitHandler("form-3");
+
+//   function attachFormSubmitHandler(formId) {
+//     const form = document.getElementById(formId);
+//     if (form) {
+//       console.log("Attaching handler to: ", formId);
+//       form.onsubmit = function (event) {
+//         event.preventDefault();
+//         handleFormSubmission(form);
+//       };
+//     } else {
+//       console.log("Form not found: ", formId);
+//     }
+//   }
+
+//   function handleFormSubmission(form) {
+//     console.log("Handling form submission for: ", form.id);
+//     let formData = new FormData(form);
+//     let allFieldsFilled = true;
+//     if (!checkRequiredFields(form.id)) {
+//     return; // Stop further execution if validation fails
+//   }form.querySelectorAll(".required-field").forEach(field => {
+//     let fieldValue = formData.get(field.name);
+  
+//     if (fieldValue && typeof fieldValue === 'string' && fieldValue.trim() === '') {
+//       console.log("Field not filled: ", field.name);
+//       allFieldsFilled = false;
+//     }
+//   });
+
+//     if (!allFieldsFilled) {
+//       showAlert("แจ้งเตือน!", "กรุณากรอกข้อมูลให้ครบถ้วน!", "error");
+//       console.log("After showAlert");
+
+//     }
+//     function checkRequiredFields(formId) {
+//       const form = document.getElementById(formId);
+//       let allFieldsFilled = true;
+    
+//       form.querySelectorAll(".required-field").forEach(field => {
+//         if (!field.value.trim()) {
+//           console.log("Field not filled: ", field.name);
+//           allFieldsFilled = false;
+//         }
+//       });
+    
+//       if (!allFieldsFilled) {
+//         showAlert("แจ้งเตือน!", "กรุณากรอกข้อมูลให้ครบถ้วน!", "error");
+//       }
+    
+//       return allFieldsFilled;
+//     }
+//     var fileInputs = form.querySelectorAll('input[type="file"]');
+//     fileInputs.forEach(input => {
+//         if (input.files.length > 0) {
+//             formData.append(input.name, input.files[0]);
+//         }
+//     });
+//     form.querySelectorAll('input').forEach(input => {
+//       console.log("Input field name:", input.name);
+//     });
+
+
+//     // Create an XMLHttpRequest object
+//     var xhr = new XMLHttpRequest();
+//     xhr.open("POST", form.action, true);
+//     xhr.setRequestHeader("Content-Type", "multipart/form-data"); // ตรวจสอบให้แน่ใจว่า Content-Type ถูกต้อง
+//     xhr.setRequestHeader("Content-Type", "application/json");
+
+//     // Prepare JSON data from FormData
+//     var data = {};
+//     formData.forEach((value, key) => (data[key] = value));
+  
+//     var jsonData = JSON.stringify(data);
+
+//     xhr.onload = function () {
+//       if (xhr.status === 200) {
+//         console.log("Data sent successfully");
+//       } else {
+//         console.error("Error sending data: " + xhr.status);
+//       }
+//     };
+
+//     xhr.onerror = function () {
+//       console.error("Error sending data");
+//     };
+//       xhr.send(formData);
+//       console.log(formData);
+//     // console.log(jsonData)
+//     // xhr.send(jsonData);
+//   }
+  

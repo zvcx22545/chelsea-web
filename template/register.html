@@ -105,7 +105,7 @@
           *
         </p>
       </div>
-      <input type="text" id="Captain" name="Captain" placeholder="กรุณากรอกชื่อ - นามสกุล" required />
+      <input type="text" id="Captain" name="Captain" placeholder="กรุณากรอกชื่อ - นามสกุล" required  class="required-field"/>
       <div class="sport-title">
         <label for="phoneCaptain">เบอร์โทร</label>
         <p style="
@@ -118,16 +118,6 @@
       <input type="tel" id="phoneCaptain" name="phoneCaptain" pattern="\d{10}" maxlength="10"
         placeholder="กรุณาเบอร์โทร 10 หลัก" required />
       <div class="sport-title">
-        <label for="LindID">Line ID</label>
-        <p style="
-              color: #eb0000;
-              font-size: clamp(1rem, 0.7727rem + 0.6061vw, 1.5rem);
-            ">
-          *
-        </p>
-      </div>
-      <input type="text" id="LineID" name="LindID" placeholder="กรุณากรอก ID Line" required />
-      <div class="sport-title">
         <label for="emailCaptian">อีเมล</label>
         <p style="
               color: #eb0000;
@@ -137,13 +127,10 @@
         </p>
       </div>
       <input type="email" id="emailCaptian" name="emailCaptian" placeholder="กรุณากรอกอีเมล" required />
-    
-      <!-- <hr /> -->
       <div class="btn-next">
-        <a class="next2" href="./register2.html"><button class="next" type="button" style="width: 196px" id="load2">
-        <!-- onclick="nextStep(2)" -->
-        ถัดไป
-        </button></a>
+        <button class="next" type="submit" style="width: 196px" id="load2"> <!-- onclick="nextStep(2)" -->
+          ถัดไป
+        </button>
       </div>
     </form>
   </div>
