@@ -8,39 +8,39 @@ function showAlert(title, text, icon) {
     confirmButtonText: "ตกลง",
   });
 }
-document.addEventListener("DOMContentLoaded", () => {
-  const CheckInputValue = (submitid) => {
-    const submitButton = document.getElementById(submitid);
-    if (submitButton) {
-      submitButton.addEventListener("click", function (event) {
-        var requiredFields = document.querySelectorAll(".required-field");
-        var allFieldsFilled = true;
+// document.addEventListener("DOMContentLoaded", () => {
+//   const CheckInputValue = (submitid) => {
+//     const submitButton = document.getElementById(submitid);
+//     if (submitButton) {
+//       submitButton.addEventListener("click", function (event) {
+//         var requiredFields = document.querySelectorAll(".required-field");
+//         var allFieldsFilled = true;
 
-        // Check each field
-        for (var i = 0; i < requiredFields.length; i++) {
-          if (requiredFields[i].value.trim() === "") {
-            allFieldsFilled = false;
-            break;
-          }
-        }
+//         // Check each field
+//         for (var i = 0; i < requiredFields.length; i++) {
+//           if (requiredFields[i].value.trim() === "") {
+//             allFieldsFilled = false;
+//             break;
+//           }
+//         }
 
-        // If any field is empty, show SweetAlert2 alert and prevent form submission
-        if (!allFieldsFilled) {
-          event.preventDefault();
-          Swal.fire({
-            icon: "error",
-            title: "Oops...",
-            text: "กรุณากรอกข้อมูลให้ครบถ้วน!",
-          });
-        }
-      });
-    } else {
-      console.error("Submit button not found:", submitid);
-    }
-  };
-  CheckInputValue("load2");
-  CheckInputValue("load3");
-});
+//         // If any field is empty, show SweetAlert2 alert and prevent form submission
+//         if (!allFieldsFilled) {
+//           event.preventDefault();
+//           Swal.fire({
+//             icon: "error",
+//             title: "Oops...",
+//             text: "กรุณากรอกข้อมูลให้ครบถ้วน!",
+//           });
+//         }
+//       });
+//     } else {
+//       console.error("Submit button not found:", submitid);
+//     }
+//   };
+//   CheckInputValue("load2");
+//   CheckInputValue("load3");
+// });
 
 
 
