@@ -174,7 +174,23 @@ document.addEventListener("DOMContentLoaded", function () {
   checkinput3.addEventListener('click', function() {
     checkInputs("nameplayer-3", "dateplayer-3", "phoneplayer-3");
   });
+  function blockThaiInput(event) {
+    var regex = /[^\u0E00-\u0E7F]/g; // Regular expression to match non-Thai characters
+    if (!regex.test(event.key)) {
+      event.preventDefault(); // Prevent Thai characters
+      showAlert(
+        "แจ้งเตือน!",
+        "ไม่สามารถใส่ภาษาไทยได้!",
+        "error"
+      );
+    }
+  }
+
+  // Attach the function to the input element
+  var inputElement = document.getElementById('LineID');
+  inputElement.addEventListener('keypress', blockThaiInput);
 });
+
 
 // Function to validate the Age input
 
